@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="~/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/assets/css/home.css">
+</head>
+
+<body>
+    <div>
+
+        @await Component.InvokeAsync("Header")
+
+        @RenderBody()
+        @await Component.InvokeAsync("Footer")
+    </div>
+    <script src="~/assets/js/bootstrap.js"></script>
+    <script src="~/assets/js/home.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            const owl1 = $(".owl-carousel-1").owlCarousel({
+                loop: false,
+                margin: 10,
+                nav: false,
+                autoplay: false,
+                autoplayTimeout: 3000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+
+            const prevButtonCarousel1 = document.querySelectorAll(".carousel-button")[0];
+            const nextButtonCarousel1 = document.querySelectorAll(".carousel-button")[1];
+
+            nextButtonCarousel1.addEventListener('click', function () {
+                owl1.trigger('next.owl.carousel');
+            });
+
+            prevButtonCarousel1.addEventListener('click', function () {
+                owl1.trigger('prev.owl.carousel');
+            });
+
+            const owl2 = $(".owl-carousel-2").owlCarousel({
+                loop: false,
+                margin: 10,
+                nav: false,
+                autoplay: false,
+                autoplayTimeout: 3000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 2
+                    }
+                }
+            });
+
+            const prevButtonCarousel2 = document.querySelectorAll(".carousel-button")[2];
+            const nextButtonCarousel2 = document.querySelectorAll(".carousel-button")[3];
+
+            nextButtonCarousel2.addEventListener('click', function () {
+                owl2.trigger('next.owl.carousel');
+            });
+
+            prevButtonCarousel2.addEventListener('click', function () {
+                owl2.trigger('prev.owl.carousel');
+            });
+
+            const owl3 = $(".owl-carousel-3").owlCarousel({
+                loop: false,
+                margin: 10,
+                nav: false,
+                autoplay: false,
+                autoplayTimeout: 3000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+
+            const owl4 = $(".owl-carousel-4").owlCarousel({
+                loop: false,
+                margin: 10,
+                nav: false,
+                autoplay: false,
+                autoplayTimeout: 3000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+            const owl5 = $(".owl-carousel-5").owlCarousel({
+                loop: false,
+                margin: 10,
+                nav: false,
+                autoplay: false,
+                autoplayTimeout: 3000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

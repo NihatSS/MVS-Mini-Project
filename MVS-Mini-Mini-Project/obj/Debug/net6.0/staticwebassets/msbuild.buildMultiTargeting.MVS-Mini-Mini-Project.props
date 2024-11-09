@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MVS-Mini-Mini-Project.props" />
+</Project>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\MVS-Mini-Mini-Project.props" />
+</Project>
