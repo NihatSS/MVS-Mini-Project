@@ -1,11 +1,19 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using MVS_Mini_Mini_Project.Data;
+using MVS_Mini_Mini_Project.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
+
+
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddIdentity<AppUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppDbContext>()
+                .AddDefaultTokenProviders();
 
 builder.Services.AddControllersWithViews();
 

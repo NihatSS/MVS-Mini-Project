@@ -1,0 +1,31 @@
+﻿@model LoginVM
+
+<link href="~/assets/css/custom.css" rel="stylesheet" />
+
+<div class="container">
+    <h1 class="text-center">Login</h1>
+
+    <form id="register-form" asp-controller="Account" asp-action="Login" method="post">
+        <label>
+            <p class="label-txt">ENTER YOUR EMAIL OR USERNAME</p>
+            <input asp-for="@Model.UsernameOrEmail" class="input">
+            <div class="line-box">
+                <div class="line"></div>
+            </div>
+            <span asp-validation-for="@Model.UsernameOrEmail" style="display:block; text-align:left;" class="text-danger"></span>
+        </label>
+        <label>
+            <p class="label-txt">ENTER YOUR PASSWORD</p>
+            <input asp-for="@Model.Password" type="password" class="input">
+            <div class="line-box">
+                <div class="line"></div>
+            </div>
+            <span asp-validation-for="@Model.Password" style="display:block; text-align:left;" class="text-danger"></span>
+        </label>
+
+        <div class="text-danger text-center" asp-validation-summary="All"></div>
+
+        <button type="submit">submit</button>
+        <h6 class="mt-4">Haven't an account? <a asp-controller="Account" asp-action="Register">Create one</a></h6>
+    </form>
+</div>

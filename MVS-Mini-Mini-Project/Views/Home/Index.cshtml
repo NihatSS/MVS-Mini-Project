@@ -1,7 +1,11 @@
-﻿<main>
-    <h1 class="position-absolute slider-text-1">On The Road</h1>
-    <h1 class="position-absolute slider-text-2">Choose</h1>
-    <h1 class="position-absolute slider-text-3">Smartest</h1>
+﻿@model List<Slider>
+
+<main>
+    @foreach (var item in Model)
+    {
+        <h1 class="position-absolute slider-text-3">@item.Title</h1>
+
+    }
     <button class="position-absolute slider-button">View Detail</button>
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -15,7 +19,7 @@
             <div class="carousel-item">
                 <img src="./assets/img/slideshow_image_1.webp" class="d-block w-100 img-fluid" alt="Slide 1">
             </div>
-        </div>
+        </div> 
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -32,11 +36,11 @@
             <div class="row h-100">
                 <div class="col-6  d-flex">
                     <div class="col-6">
-                        <img src="./assets/img/home_html_1.avif" alt="" height="100%" width="100%"
+                        <img src="./assets/img/home_html_1.jpg" alt="" height="100%" width="100%"
                              class="banner-image img-fluid">
                     </div>
                     <div class="col-6">
-                        <img src="./assets/img/home_html_2.avif" alt="" height="100%" width="100%"
+                        <img src="./assets/img/home_html_2.jpg" alt="" height="100%" width="100%"
                              class="banner-image img-fluid">
                     </div>
                 </div>
@@ -1123,7 +1127,7 @@
                                 </h5>
                                 <div class="person justify-content-center d-flex mt-3">
                                     <div class="image-box">
-                                        <img src="./assets/img/testimonials_image_1_2x.avif" alt=""
+                                        <img src="./assets/img/testimonials_image_1_2x.jpg" alt=""
                                              class="img-fluid pp">
                                     </div>
                                     <div class="person-info mx-2 mt-2">
@@ -1145,7 +1149,7 @@
                                 </h5>
                                 <div class="person justify-content-center d-flex mt-3">
                                     <div class="image-box">
-                                        <img src="./assets/img/testimonials_image_2_2x.webp" alt=""
+                                        <img src="./assets/img/testimonials_image_2_2x.jpg" alt=""
                                              class="img-fluid pp">
                                     </div>
                                     <div class="person-info mx-2 mt-2">
@@ -1167,7 +1171,7 @@
                                 </h5>
                                 <div class="person justify-content-center d-flex mt-3">
                                     <div class="image-box">
-                                        <img src="./assets/img/testimonials_image_3_2x.webp" alt=""
+                                        <img src="./assets/img/testimonials_image_3_2x.jpg" alt=""
                                              class="img-fluid pp">
                                     </div>
                                     <div class="person-info mx-2 mt-2">
@@ -1189,50 +1193,50 @@
                 <div class="row p-4">
                     <div class="col-6 col-md-4 col-lg-2">
                         <div class="col-6">
-                            <img src="./assets/img/vendor_logo_1_2x.webp" alt="">
+                            <img src="./assets/img/vendor_logo_7_2x.jpg" alt="">
                         </div>
                         <div class="col-6">
-                            <img src="./assets/img/vendor_logo_3_2x.avif" alt="">
+                            <img src="./assets/img/vendor_logo_3_2x.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-2">
                         <div class="col-6 ">
-                            <img src="./assets/img/vendor_logo_5_2x.avif" alt="">
+                            <img src="./assets/img/vendor_logo_5_2x.jpg" alt="">
                         </div>
                         <div class="col-6">
-                            <img src="./assets/img/vendor_logo_7_2x.avif" alt="">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="col-6">
-                            <img src="./assets/img/vendor_logo_1_2x.webp" alt="">
-                        </div>
-                        <div class="col-6">
-                            <img src="./assets/img/vendor_logo_5_2x.avif" alt="">
+                            <img src="./assets/img/vendor_logo_7_2x.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-2">
                         <div class="col-6">
-                            <img src="./assets/img/vendor_logo_2_2x.avif" alt="">
+                            <img src="./assets/img/vendor_logo_3_2x.jpg" alt="">
                         </div>
                         <div class="col-6">
-                            <img src="./assets/img/vendor_logo_4_2x.avif" alt="">
+                            <img src="./assets/img/vendor_logo_5_2x.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-2">
                         <div class="col-6">
-                            <img src="./assets/img/vendor_logo_2_2x.avif" alt="">
+                            <img src="./assets/img/vendor_logo_2_2x.jpg" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img src="./assets/img/vendor_logo_4_2x.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="col-6">
+                            <img src="./assets/img/vendor_logo_2_2x.jpg" alt="">
                         </div>
                         <div class="col-3 col-lg-2">
-                            <img src="./assets/img/vendor_logo_4_2x.avif" alt="">
+                            <img src="./assets/img/vendor_logo_4_2x.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-2">
                         <div class="col-6">
-                            <img src="./assets/img/vendor_logo_2_2x.avif" alt="">
+                            <img src="./assets/img/vendor_logo_2_2x.jpg" alt="">
                         </div>
                         <div class="col-3 col-lg-2">
-                            <img src="./assets/img/vendor_logo_4_2x.avif" alt="">
+                            <img src="./assets/img/vendor_logo_4_2x.jpg" alt="">
                         </div>
                     </div>
                 </div>

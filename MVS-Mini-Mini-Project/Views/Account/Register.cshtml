@@ -1,0 +1,57 @@
+﻿@model RegisterVM
+
+@{
+    Layout = null;
+}
+
+<link href="~/assets/css/custom.css" rel="stylesheet" />
+<link href="~/assets/css/bootstrap.css" rel="stylesheet" />
+
+<div class="container mt-5">
+    <h1 class="text-center">Register</h1>
+    <div class="text-danger" asp-validation-summary="All"></div>
+    <form id="register-form" asp-controller="Account" asp-action="Register" method="post">
+        <label>
+            <p class="label-txt">ENTER YOUR EMAIL</p>
+            <input asp-for="@Model.Email" class="input">
+            <div class="line-box">
+                <div class="line"></div>
+            </div>
+            <span asp-validation-for=@Model.Email style="display:block; text-align:left;" class="text-danger"></span>
+        </label>
+        <label>
+            <p class="label-txt">ENTER YOUR USERNAME</p>
+            <input asp-for="@Model.Username" class="input">
+            <div class="line-box">
+                <div class="line"></div>
+            </div>
+            <span asp-validation-for=@Model.Username style="display:block; text-align:left;" class="text-danger"></span>
+        </label>
+        <label>
+            <p class="label-txt">ENTER YOUR FULLNAME</p>
+            <input asp-for="@Model.Fullname" class="input">
+            <div class="line-box">
+                <div class="line"></div>
+            </div>
+            <span asp-validation-for=@Model.Fullname style="display:block; text-align:left;" class="text-danger"></span>
+        </label>
+        <label>
+            <p class="label-txt">ENTER YOUR PASSWORD</p>
+            <input asp-for="@Model.Password" class="input">
+            <div class="line-box">
+                <div class="line"></div>
+            </div>
+            <span asp-validation-for=@Model.Password style="display:block; text-align:left;" class="text-danger"></span>
+        </label>
+        <label>
+            <p class="label-txt">CONFIRM YOUR PASSWORD</p>
+            <input asp-for="@Model.ConfirmPassword" class="input mt-3">
+            <div class="line-box">
+                <div class="line"></div>
+            </div>
+            <span asp-validation-for=@Model.ConfirmPassword style="display:block; text-align:left;" class="text-danger"></span>
+        </label>
+        <button type="submit">submit</button>
+        <h6 class="mt-4">Have an account? <a asp-controller="Account" asp-action="Login">Log in</a></h6>
+    </form>
+</div>

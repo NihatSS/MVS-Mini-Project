@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aD/tgP4fxspn3D6+lxb/OHnR5RrP9UAfxLNAW9TnGpQ=",
+  "Hash": "MONjjDBv5LSXFelo5vTSDNjc1p61opKoow4CnMLlwOQ=",
   "Source": "MVS-Mini-Mini-Project",
   "BasePath": "_content/MVS-Mini-Mini-Project",
   "Mode": "Default",
@@ -2487,6 +2487,25 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\bootstrap.css"
     },
     {
+      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\css\\custom.css",
+      "SourceId": "MVS-Mini-Mini-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\",
+      "BasePath": "_content/MVS-Mini-Mini-Project",
+      "RelativePath": "assets/css/custom.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\css\\custom.css"
+    },
+    {
       "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\css\\home.css",
       "SourceId": "MVS-Mini-Mini-Project",
       "SourceType": "Discovered",
@@ -2544,6 +2563,25 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\shop.css"
     },
     {
+      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\57e15334-5ba0-4863-84ea-5728a3f2f2d8_Screenshot (42).png",
+      "SourceId": "MVS-Mini-Mini-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\",
+      "BasePath": "_content/MVS-Mini-Mini-Project",
+      "RelativePath": "assets/img/57e15334-5ba0-4863-84ea-5728a3f2f2d8_Screenshot (42).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\57e15334-5ba0-4863-84ea-5728a3f2f2d8_Screenshot (42).png"
+    },
+    {
       "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\65-large_default_36f7faa9-05f9-4ebb-8d0b-0bbae58d378c_grande.webp",
       "SourceId": "MVS-Mini-Mini-Project",
       "SourceType": "Discovered",
@@ -2582,6 +2620,25 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\apmenuitem_ihtml_2.avif"
     },
     {
+      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\apmenuitem_ihtml_2.jpg",
+      "SourceId": "MVS-Mini-Mini-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\",
+      "BasePath": "_content/MVS-Mini-Mini-Project",
+      "RelativePath": "assets/img/apmenuitem_ihtml_2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\apmenuitem_ihtml_2.jpg"
+    },
+    {
       "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\background_accessories_1.avif",
       "SourceId": "MVS-Mini-Mini-Project",
       "SourceType": "Discovered",
@@ -2599,6 +2656,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\background_accessories_1.avif"
+    },
+    {
+      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\background_accessories_1.jpg",
+      "SourceId": "MVS-Mini-Mini-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\",
+      "BasePath": "_content/MVS-Mini-Mini-Project",
+      "RelativePath": "assets/img/background_accessories_1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\background_accessories_1.jpg"
     },
     {
       "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\background_accessories_2.avif",
@@ -2620,12 +2696,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\background_accessories_2.avif"
     },
     {
-      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\background_accessories_3.webp",
+      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\background_accessories_2.jpg",
       "SourceId": "MVS-Mini-Mini-Project",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\",
       "BasePath": "_content/MVS-Mini-Mini-Project",
-      "RelativePath": "assets/img/background_accessories_3.webp",
+      "RelativePath": "assets/img/background_accessories_2.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2636,7 +2712,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\background_accessories_3.webp"
+      "OriginalItemSpec": "wwwroot\\assets\\img\\background_accessories_2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\background_accessories_3.jpg",
+      "SourceId": "MVS-Mini-Mini-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\",
+      "BasePath": "_content/MVS-Mini-Mini-Project",
+      "RelativePath": "assets/img/background_accessories_3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\background_accessories_3.jpg"
     },
     {
       "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\background_accessories_4.avif",
@@ -2658,6 +2753,25 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\background_accessories_4.avif"
     },
     {
+      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\background_accessories_4.jpg",
+      "SourceId": "MVS-Mini-Mini-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\",
+      "BasePath": "_content/MVS-Mini-Mini-Project",
+      "RelativePath": "assets/img/background_accessories_4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\background_accessories_4.jpg"
+    },
+    {
       "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\background_accessories_5.avif",
       "SourceId": "MVS-Mini-Mini-Project",
       "SourceType": "Discovered",
@@ -2677,6 +2791,25 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\background_accessories_5.avif"
     },
     {
+      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\background_accessories_5.jpg",
+      "SourceId": "MVS-Mini-Mini-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\",
+      "BasePath": "_content/MVS-Mini-Mini-Project",
+      "RelativePath": "assets/img/background_accessories_5.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\background_accessories_5.jpg"
+    },
+    {
       "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\background_accessories_6.avif",
       "SourceId": "MVS-Mini-Mini-Project",
       "SourceType": "Discovered",
@@ -2694,6 +2827,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\background_accessories_6.avif"
+    },
+    {
+      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\background_accessories_6.jpg",
+      "SourceId": "MVS-Mini-Mini-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\",
+      "BasePath": "_content/MVS-Mini-Mini-Project",
+      "RelativePath": "assets/img/background_accessories_6.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\background_accessories_6.jpg"
     },
     {
       "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\bg_breadcrumb.webp",
@@ -8073,6 +8225,25 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\home_html_1.avif"
     },
     {
+      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\home_html_1.jpg",
+      "SourceId": "MVS-Mini-Mini-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\",
+      "BasePath": "_content/MVS-Mini-Mini-Project",
+      "RelativePath": "assets/img/home_html_1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\home_html_1.jpg"
+    },
+    {
       "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\home_html_1-2.PNG",
       "SourceId": "MVS-Mini-Mini-Project",
       "SourceType": "Discovered",
@@ -8109,6 +8280,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\home_html_2.avif"
+    },
+    {
+      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\home_html_2.jpg",
+      "SourceId": "MVS-Mini-Mini-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\",
+      "BasePath": "_content/MVS-Mini-Mini-Project",
+      "RelativePath": "assets/img/home_html_2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\home_html_2.jpg"
     },
     {
       "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\home_html_3.webp",
@@ -8149,12 +8339,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\img-support_2x.webp"
     },
     {
-      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\logo.avif",
+      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\logo.jpg",
       "SourceId": "MVS-Mini-Mini-Project",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\",
       "BasePath": "_content/MVS-Mini-Mini-Project",
-      "RelativePath": "assets/img/logo.avif",
+      "RelativePath": "assets/img/logo.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -8165,7 +8355,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\logo.avif"
+      "OriginalItemSpec": "wwwroot\\assets\\img\\logo.jpg"
     },
     {
       "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\payment_2x.webp",
@@ -8263,12 +8453,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\testimonials_image_1_2x.avif"
     },
     {
-      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\testimonials_image_2_2x.webp",
+      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\testimonials_image_1_2x.jpg",
       "SourceId": "MVS-Mini-Mini-Project",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\",
       "BasePath": "_content/MVS-Mini-Mini-Project",
-      "RelativePath": "assets/img/testimonials_image_2_2x.webp",
+      "RelativePath": "assets/img/testimonials_image_1_2x.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -8279,15 +8469,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\testimonials_image_2_2x.webp"
+      "OriginalItemSpec": "wwwroot\\assets\\img\\testimonials_image_1_2x.jpg"
     },
     {
-      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\testimonials_image_3_2x.webp",
+      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\testimonials_image_2_2x.jpg",
       "SourceId": "MVS-Mini-Mini-Project",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\",
       "BasePath": "_content/MVS-Mini-Mini-Project",
-      "RelativePath": "assets/img/testimonials_image_3_2x.webp",
+      "RelativePath": "assets/img/testimonials_image_2_2x.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -8298,7 +8488,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\testimonials_image_3_2x.webp"
+      "OriginalItemSpec": "wwwroot\\assets\\img\\testimonials_image_2_2x.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\testimonials_image_3_2x.jpg",
+      "SourceId": "MVS-Mini-Mini-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\",
+      "BasePath": "_content/MVS-Mini-Mini-Project",
+      "RelativePath": "assets/img/testimonials_image_3_2x.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\testimonials_image_3_2x.jpg"
     },
     {
       "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vendor_logo_1_2x.webp",
@@ -8339,6 +8548,25 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\vendor_logo_2_2x.avif"
     },
     {
+      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vendor_logo_2_2x.jpg",
+      "SourceId": "MVS-Mini-Mini-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\",
+      "BasePath": "_content/MVS-Mini-Mini-Project",
+      "RelativePath": "assets/img/vendor_logo_2_2x.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\vendor_logo_2_2x.jpg"
+    },
+    {
       "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vendor_logo_3_2x.avif",
       "SourceId": "MVS-Mini-Mini-Project",
       "SourceType": "Discovered",
@@ -8356,6 +8584,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\vendor_logo_3_2x.avif"
+    },
+    {
+      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vendor_logo_3_2x.jpg",
+      "SourceId": "MVS-Mini-Mini-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\",
+      "BasePath": "_content/MVS-Mini-Mini-Project",
+      "RelativePath": "assets/img/vendor_logo_3_2x.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\vendor_logo_3_2x.jpg"
     },
     {
       "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vendor_logo_4_2x.avif",
@@ -8377,6 +8624,25 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\vendor_logo_4_2x.avif"
     },
     {
+      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vendor_logo_4_2x.jpg",
+      "SourceId": "MVS-Mini-Mini-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\",
+      "BasePath": "_content/MVS-Mini-Mini-Project",
+      "RelativePath": "assets/img/vendor_logo_4_2x.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\vendor_logo_4_2x.jpg"
+    },
+    {
       "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vendor_logo_5_2x.avif",
       "SourceId": "MVS-Mini-Mini-Project",
       "SourceType": "Discovered",
@@ -8394,6 +8660,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\vendor_logo_5_2x.avif"
+    },
+    {
+      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vendor_logo_5_2x.jpg",
+      "SourceId": "MVS-Mini-Mini-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\",
+      "BasePath": "_content/MVS-Mini-Mini-Project",
+      "RelativePath": "assets/img/vendor_logo_5_2x.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\vendor_logo_5_2x.jpg"
     },
     {
       "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vendor_logo_7_2x.avif",
@@ -8415,6 +8700,25 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\vendor_logo_7_2x.avif"
     },
     {
+      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vendor_logo_7_2x.jpg",
+      "SourceId": "MVS-Mini-Mini-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\",
+      "BasePath": "_content/MVS-Mini-Mini-Project",
+      "RelativePath": "assets/img/vendor_logo_7_2x.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\vendor_logo_7_2x.jpg"
+    },
+    {
       "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vermenuitem_image_1.avif",
       "SourceId": "MVS-Mini-Mini-Project",
       "SourceType": "Discovered",
@@ -8432,6 +8736,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\vermenuitem_image_1.avif"
+    },
+    {
+      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vermenuitem_image_1.jpg",
+      "SourceId": "MVS-Mini-Mini-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\",
+      "BasePath": "_content/MVS-Mini-Mini-Project",
+      "RelativePath": "assets/img/vermenuitem_image_1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\vermenuitem_image_1.jpg"
     },
     {
       "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vertical_icon_1.png",

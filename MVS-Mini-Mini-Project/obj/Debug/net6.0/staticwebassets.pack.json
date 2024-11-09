@@ -521,6 +521,10 @@
       "PackagePath": "staticwebassets\\assets\\css\\bootstrap.css"
     },
     {
+      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\css\\custom.css",
+      "PackagePath": "staticwebassets\\assets\\css\\custom.css"
+    },
+    {
       "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\css\\home.css",
       "PackagePath": "staticwebassets\\assets\\css\\home.css"
     },
@@ -533,6 +537,10 @@
       "PackagePath": "staticwebassets\\assets\\css\\shop.css"
     },
     {
+      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\57e15334-5ba0-4863-84ea-5728a3f2f2d8_Screenshot (42).png",
+      "PackagePath": "staticwebassets\\assets\\img\\57e15334-5ba0-4863-84ea-5728a3f2f2d8_Screenshot (42).png"
+    },
+    {
       "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\65-large_default_36f7faa9-05f9-4ebb-8d0b-0bbae58d378c_grande.webp",
       "PackagePath": "staticwebassets\\assets\\img\\65-large_default_36f7faa9-05f9-4ebb-8d0b-0bbae58d378c_grande.webp"
     },
@@ -541,28 +549,52 @@
       "PackagePath": "staticwebassets\\assets\\img\\apmenuitem_ihtml_2.avif"
     },
     {
+      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\apmenuitem_ihtml_2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\apmenuitem_ihtml_2.jpg"
+    },
+    {
       "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\background_accessories_1.avif",
       "PackagePath": "staticwebassets\\assets\\img\\background_accessories_1.avif"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\background_accessories_1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\background_accessories_1.jpg"
     },
     {
       "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\background_accessories_2.avif",
       "PackagePath": "staticwebassets\\assets\\img\\background_accessories_2.avif"
     },
     {
-      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\background_accessories_3.webp",
-      "PackagePath": "staticwebassets\\assets\\img\\background_accessories_3.webp"
+      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\background_accessories_2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\background_accessories_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\background_accessories_3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\background_accessories_3.jpg"
     },
     {
       "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\background_accessories_4.avif",
       "PackagePath": "staticwebassets\\assets\\img\\background_accessories_4.avif"
     },
     {
+      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\background_accessories_4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\background_accessories_4.jpg"
+    },
+    {
       "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\background_accessories_5.avif",
       "PackagePath": "staticwebassets\\assets\\img\\background_accessories_5.avif"
     },
     {
+      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\background_accessories_5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\background_accessories_5.jpg"
+    },
+    {
       "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\background_accessories_6.avif",
       "PackagePath": "staticwebassets\\assets\\img\\background_accessories_6.avif"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\background_accessories_6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\background_accessories_6.jpg"
     },
     {
       "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\bg_breadcrumb.webp",
@@ -1701,8 +1733,16 @@
       "PackagePath": "staticwebassets\\assets\\img\\home_html_1.avif"
     },
     {
+      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\home_html_1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\home_html_1.jpg"
+    },
+    {
       "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\home_html_2.avif",
       "PackagePath": "staticwebassets\\assets\\img\\home_html_2.avif"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\home_html_2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\home_html_2.jpg"
     },
     {
       "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\home_html_3.webp",
@@ -1713,8 +1753,8 @@
       "PackagePath": "staticwebassets\\assets\\img\\img-support_2x.webp"
     },
     {
-      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\logo.avif",
-      "PackagePath": "staticwebassets\\assets\\img\\logo.avif"
+      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\logo.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\logo.jpg"
     },
     {
       "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\payment_2x.webp",
@@ -1737,12 +1777,16 @@
       "PackagePath": "staticwebassets\\assets\\img\\testimonials_image_1_2x.avif"
     },
     {
-      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\testimonials_image_2_2x.webp",
-      "PackagePath": "staticwebassets\\assets\\img\\testimonials_image_2_2x.webp"
+      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\testimonials_image_1_2x.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonials_image_1_2x.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\testimonials_image_3_2x.webp",
-      "PackagePath": "staticwebassets\\assets\\img\\testimonials_image_3_2x.webp"
+      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\testimonials_image_2_2x.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonials_image_2_2x.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\testimonials_image_3_2x.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonials_image_3_2x.jpg"
     },
     {
       "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vendor_logo_1_2x.webp",
@@ -1753,24 +1797,48 @@
       "PackagePath": "staticwebassets\\assets\\img\\vendor_logo_2_2x.avif"
     },
     {
+      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vendor_logo_2_2x.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\vendor_logo_2_2x.jpg"
+    },
+    {
       "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vendor_logo_3_2x.avif",
       "PackagePath": "staticwebassets\\assets\\img\\vendor_logo_3_2x.avif"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vendor_logo_3_2x.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\vendor_logo_3_2x.jpg"
     },
     {
       "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vendor_logo_4_2x.avif",
       "PackagePath": "staticwebassets\\assets\\img\\vendor_logo_4_2x.avif"
     },
     {
+      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vendor_logo_4_2x.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\vendor_logo_4_2x.jpg"
+    },
+    {
       "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vendor_logo_5_2x.avif",
       "PackagePath": "staticwebassets\\assets\\img\\vendor_logo_5_2x.avif"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vendor_logo_5_2x.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\vendor_logo_5_2x.jpg"
     },
     {
       "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vendor_logo_7_2x.avif",
       "PackagePath": "staticwebassets\\assets\\img\\vendor_logo_7_2x.avif"
     },
     {
+      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vendor_logo_7_2x.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\vendor_logo_7_2x.jpg"
+    },
+    {
       "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vermenuitem_image_1.avif",
       "PackagePath": "staticwebassets\\assets\\img\\vermenuitem_image_1.avif"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vermenuitem_image_1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\vermenuitem_image_1.jpg"
     },
     {
       "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\img\\vertical_icon_1.png",

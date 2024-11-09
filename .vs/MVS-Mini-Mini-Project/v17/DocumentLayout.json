@@ -3,28 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\areas\\admin\\views\\sliderimage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\areas\\admin\\views\\sliderimage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\areas\\admin\\controllers\\sliderimagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\areas\\admin\\controllers\\sliderimagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\areas\\admin\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\areas\\admin\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\areas\\admin\\views\\sliderimage\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\areas\\admin\\views\\sliderimage\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\areas\\admin\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\areas\\admin\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\areas\\admin\\views\\sliderimage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\areas\\admin\\views\\sliderimage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\areas\\admin\\views\\category\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\areas\\admin\\views\\category\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\areas\\admin\\views\\sliderimage\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\areas\\admin\\views\\sliderimage\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\views\\shared\\components\\header\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\views\\shared\\components\\header\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\areas\\admin\\views\\slider\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\areas\\admin\\views\\slider\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\areas\\admin\\views\\slider\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\areas\\admin\\views\\slider\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\models\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\models\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,88 +58,166 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-09T09:50:46.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\SliderImage\\Edit.cshtml",
+              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\SliderImage\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\SliderImage\\Edit.cshtml",
+              "RelativeToolTip": "MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\SliderImage\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-09T09:50:18.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\SliderImage\\Detail.cshtml",
+              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\SliderImage\\Detail.cshtml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\SliderImage\\Detail.cshtml",
+              "RelativeToolTip": "MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\SliderImage\\Detail.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-09T09:48:41.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\SliderImage\\Create.cshtml",
+              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\SliderImage\\Create.cshtml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\SliderImage\\Create.cshtml",
+              "RelativeToolTip": "MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\SliderImage\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-09T09:47:38.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\SliderImage\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\SliderImage\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\SliderImage\\Index.cshtml",
+              "RelativeToolTip": "MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\SliderImage\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-09T09:46:35.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SliderImageController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Controllers\\SliderImageController.cs",
+              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Areas\\Admin\\Controllers\\SliderImageController.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Controllers\\SliderImageController.cs",
+              "RelativeToolTip": "MVS-Mini-Mini-Project\\Areas\\Admin\\Controllers\\SliderImageController.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAswF8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T09:44:34.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "RelativeToolTip": "MVS-Mini-Mini-Project\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "ViewState": "AQIAAK8AAAAAAAAAAAAswMUAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-09T09:32:48.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MVS-Mini-Mini-Project\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T09:29:00.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Slider.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Models\\Slider.cs",
+              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Models\\Slider.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Models\\Slider.cs",
+              "RelativeToolTip": "MVS-Mini-Mini-Project\\Models\\Slider.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T09:25:41.674Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Models\\Category.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Models\\Category.cs",
-              "RelativeToolTip": "MVS-Mini-Mini-Project\\Models\\Category.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T07:49:43.297Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\Category\\Edit.cshtml",
-              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\Category\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\Category\\Edit.cshtml",
-              "RelativeToolTip": "MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\Category\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-09T07:48:44.566Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\Category\\Create.cshtml",
-              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\Category\\Create.cshtml",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\Category\\Create.cshtml",
-              "RelativeToolTip": "MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\Category\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAPAAAA",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "RelativeToolTip": "MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-09T07:48:22.201Z",
+              "WhenOpened": "2024-11-09T09:24:37.574Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "MVS-Mini-Mini-Project\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAkwFMAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T07:47:34.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Detail.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\Category\\Detail.cshtml",
-              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\Category\\Detail.cshtml",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\Category\\Detail.cshtml",
-              "RelativeToolTip": "MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\Category\\Detail.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-09T07:47:43.783Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\Category\\Index.cshtml",
-              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\Category\\Index.cshtml",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\Category\\Index.cshtml",
-              "RelativeToolTip": "MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\Category\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAOAAAA",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
+              "RelativeToolTip": "MVS-Mini-Mini-Project\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAABYAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-09T07:46:06.071Z",
+              "WhenOpened": "2024-11-09T09:23:57.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SliderController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "RelativeToolTip": "MVS-Mini-Mini-Project\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAswFYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T09:23:13.982Z",
               "EditorCaption": ""
             }
           ]
