@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using MVS_Mini_Mini_Project.Data;
 using MVS_Mini_Mini_Project.Models;
+using MVS_Mini_Mini_Project.ViewModels;
 
 namespace MVS_Mini_Mini_Project.Areas.Admin.Controllers
 {
@@ -90,6 +91,52 @@ namespace MVS_Mini_Mini_Project.Areas.Admin.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id is null) return BadRequest();
+
+            News news = await _context.News.FirstOrDefaultAsync(m => m.Id == id);
+
+            if (news is null) return NotFound();
+
+            return View(news);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int? id, News request)
+        {
+            if (id is null) return BadRequest();
+
+            News news = await _context.News.FirstOrDefaultAsync(m => m.Id == id);
+            if (news is null) return NotFound();
+
+            news.Title = request.Title;
+            news.Desc = request.Desc;
+
+            if (request.Photo != null)
+            {
+                string existPath = Path.Combine(_env.WebRootPath, "assets/img", news.Image);
+                DeleteFile(existPath);
+
+                string newFileName = Guid.NewGuid().ToString() + "_" + request.Photo.FileName;
+                string newPath = Path.Combine(_env.WebRootPath, "assets/img", newFileName);
+
+                using (FileStream stream = new(newPath, FileMode.Create))
+                {
+                    await request.Photo.CopyToAsync(stream);
+                }
+
+                news.Image = newFileName;
+            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
 
 
 

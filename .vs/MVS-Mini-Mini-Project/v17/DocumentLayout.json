@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\models\\banner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\models\\banner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\areas\\admin\\controllers\\sliderimagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\areas\\admin\\controllers\\sliderimagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\areas\\admin\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\areas\\admin\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Banner.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Models\\Banner.cs",
-              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Models\\Banner.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Models\\Banner.cs",
-              "RelativeToolTip": "MVS-Mini-Mini-Project\\Models\\Banner.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T10:03:25.319Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Views\\Blog\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Views\\Blog\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Views\\Blog\\Index.cshtml",
+              "RelativeToolTip": "MVS-Mini-Mini-Project\\Views\\Blog\\Index.cshtml",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAmwBgAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-10T10:29:10.352Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SliderImageController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Controllers\\SliderImageController.cs",
-              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Areas\\Admin\\Controllers\\SliderImageController.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Controllers\\SliderImageController.cs",
-              "RelativeToolTip": "MVS-Mini-Mini-Project\\Areas\\Admin\\Controllers\\SliderImageController.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAA5wIYAAAAAAAAA",
+              "Title": "BlogController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Controllers\\BlogController.cs",
+              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Controllers\\BlogController.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Controllers\\BlogController.cs",
+              "RelativeToolTip": "MVS-Mini-Mini-Project\\Controllers\\BlogController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T09:57:49.728Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NewsController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Controllers\\NewsController.cs",
-              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Areas\\Admin\\Controllers\\NewsController.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Controllers\\NewsController.cs",
-              "RelativeToolTip": "MVS-Mini-Mini-Project\\Areas\\Admin\\Controllers\\NewsController.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAmwD8AAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T09:29:59.867Z",
+              "WhenOpened": "2024-11-10T10:27:43.392Z",
               "EditorCaption": ""
             },
             {

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MVS-Mini-Mini-Project")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf14c76c80df87aa0df706f239eceff3cb1f6cb5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9af75157cb3edf8394963d0affef93847c53d8f0")]
 [assembly: System.Reflection.AssemblyProductAttribute("MVS-Mini-Mini-Project")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MVS-Mini-Mini-Project")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
