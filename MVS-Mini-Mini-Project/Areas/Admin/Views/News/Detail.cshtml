@@ -1,0 +1,9 @@
+﻿@model News
+<div class="container mt-5">
+    <h3>Title: @Model.Title</h3>
+    <h3>Desc: @Model.Desc</h3>
+
+    <img src="~/assets/img/@Model.Image" style="width:300px;height:200px" alt="image">
+    <a asp-action="Index" class="btn btn-primary mt-5 d-block w-25">Back</a>
+</div>
+

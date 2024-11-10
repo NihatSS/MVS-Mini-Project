@@ -1,0 +1,138 @@
+﻿@model List<Category>
+
+<main>
+    <section id="menu-info" class="bg-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mt-5">
+                    <span class="text-light menu-info-text">
+                        <a href="index.html">Home</a> > <span style="border-bottom: 1px solid #f0d115;">
+                            News
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog-news">
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-8  bg-white">
+                    <div class="row">
+                        <div class="col-12 p-2" style="border-bottom: 1px solid rgba(0,0,0,.1);">
+                            <span class="blog-news-text">News</span>
+                        </div>
+                        <div class="col-12 p-2">
+                            <span class="blog-header-text">
+                                Turpis at eleifend leo mi elit Aenean porta ac sed
+                                faucibus
+                            </span>
+                            <br>
+                            <span class="blog-date">Posted by Dinh Nghia Tran on March 17, 2015</span>
+                        </div>
+                        <div class="col-12 p-2">
+                            <img src="./assets/img/blog-1_2x.webp" class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="col-12">
+                            <span class="blog-footer">
+                                Mi vitae magnis Fusce laoreet nibh felis porttitor laoreet
+                                Vestibulum faucibus. At Nulla id tincidunt ut sed semper vel Lorem condimentum
+                                ornare. Laoreet Vestibulum lacinia massa a commodo habitasse velit...
+                            </span>
+                        </div>
+                        <div class="col-12 mt-3 mb-2">
+                            <button class="card-button">
+                                read-more<i class="fa-solid fa-arrow-right-long"></i>
+                            </button>
+                        </div>
+                        <div class="col-12 p-2">
+                            <span class="blog-header-text">
+                                Turpis at eleifend leo mi elit Aenean porta ac sed
+                                faucibus
+                            </span>
+                            <br>
+                            <span class="blog-date">Posted by Dinh Nghia Tran on March 17, 2015</span>
+                        </div>
+                        <div class="col-12 p-2">
+                            <img src="./assets/img/blog-1_2x.webp" class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="col-12">
+                            <span class="blog-footer">
+                                Mi vitae magnis Fusce laoreet nibh felis porttitor laoreet
+                                Vestibulum faucibus. At Nulla id tincidunt ut sed semper vel Lorem condimentum
+                                ornare. Laoreet Vestibulum lacinia massa a commodo habitasse velit...
+                            </span>
+                        </div>
+                        <div class="col-12 mt-3 mb-2">
+                            <button class="card-button">
+                                read-more<i class="fa-solid fa-arrow-right-long"></i>
+                            </button>
+                        </div>
+                        <div class="col-12 p-2">
+                            <span class="blog-header-text">
+                                Turpis at eleifend leo mi elit Aenean porta ac sed
+                                faucibus
+                            </span>
+                            <br>
+                            <span class="blog-date">Posted by Dinh Nghia Tran on March 17, 2015</span>
+                        </div>
+                        <div class="col-12 p-2">
+                            <img src="./assets/img/blog-1_2x.webp" class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="col-12">
+                            <span class="blog-footer">
+                                Mi vitae magnis Fusce laoreet nibh felis porttitor laoreet
+                                Vestibulum faucibus. At Nulla id tincidunt ut sed semper vel Lorem condimentum
+                                ornare. Laoreet Vestibulum lacinia massa a commodo habitasse velit...
+                            </span>
+                        </div>
+                        <div class="col-12 mt-3 mb-2">
+                            <button class="card-button">
+                                read-more<i class="fa-solid fa-arrow-right-long"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mx-4">
+                    <span class="blog-news-text">Recent articles</span>
+                    <div class="row">
+                        <div class="col-12 bg-white">
+                            <span class="articles-text">
+                                Turpis at eleifend leo mi elit Aenean porta ac sed
+                                faucibus
+                            </span>
+                            <br>
+                            <span class="blog-date">March 17, 2015</span>
+                            <br>
+                            <span class="articles-text">
+                                Turpis at eleifend leo mi elit Aenean porta ac sed
+                                faucibus
+                            </span>
+                            <br>
+                            <span class="blog-date">March 17, 2015</span>
+                            <br>
+                            <span class="articles-text">
+                                Turpis at eleifend leo mi elit Aenean porta ac sed
+                                faucibus
+                            </span>
+                            <br>
+                            <span class="blog-date">March 17, 2015</span>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <span class="blog-news-text">Categories</span>
+                        </div>
+                        <div class="col-12 mt-2 bg-white">
+                            @foreach (var item in Model)
+                            {
+                                <span class="articles-text">@item.Name</span>
+                                <br>
+                            }
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
