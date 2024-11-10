@@ -14,6 +14,7 @@ namespace MVS_Mini_Mini_Project.Data
         public DbSet<SliderImage> SliderImages { get; set; }
         public DbSet<Banner> Banners { get; set; }
         public DbSet<News> News { get; set; }
+        public DbSet<Brand> Brands { get; set; }
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
     }
 }

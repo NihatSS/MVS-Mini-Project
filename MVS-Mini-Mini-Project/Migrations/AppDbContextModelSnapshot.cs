@@ -236,6 +236,22 @@ namespace MVS_Mini_Mini_Project.Migrations
                     b.ToTable("Banners");
                 });
 
+            modelBuilder.Entity("MVS_Mini_Mini_Project.Models.Brand", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Brands");
+                });
+
             modelBuilder.Entity("MVS_Mini_Mini_Project.Models.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -264,6 +280,9 @@ namespace MVS_Mini_Mini_Project.Migrations
                     b.Property<int>("DiscountPercent")
                         .HasColumnType("int");
 
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Discounts");
@@ -278,12 +297,14 @@ namespace MVS_Mini_Mini_Project.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Desc")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Image")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

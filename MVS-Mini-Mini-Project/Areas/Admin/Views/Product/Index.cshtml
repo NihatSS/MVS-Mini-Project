@@ -1,0 +1,82 @@
+﻿@model List<Product>
+<div class="container mt-5">
+    <h1 class="text-center">Products</h1>
+    <div class="create-area">
+        <a asp-action="Create" class="btn btn-success">Create</a>
+    </div>
+    @if (Model.Count() != 0)
+    {
+        <div class="table-responsive pt-3 mt-3">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Sort description
+                        </th>
+                        <th>
+                            Price
+                        </th>
+                        <th>
+                            Main image
+                        </th>
+                        <th>
+                            Category name
+                        </th>
+                        <th>
+                            Discount name
+                        </th>
+                        <th>
+                            Options
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @item.Name
+                            </td>
+                            <td>
+                                @item.SortDesc
+                            </td>
+                            <td>
+                                @if (item.Discount.Name == "None")
+                                {
+                                    @item.Price
+                                }
+                                else
+                                {
+                                    <span style="color:red;">@(item.Price * (item.Discount.DiscountPercent / 100))</span>
+                                    <span style="text-decoration:line-through">@item.Name</span>
+                                }
+                                
+                            </td>
+                            <td>
+                                <img src="@item.Images.FirstOrDefault(x=>x.IsMain).Image" alt="" style="width:100px; height:100px" />
+                            </td>
+                            <td>
+                                @item.Category.Name
+                            </td>
+                            <td>
+                                @item.Discount.Name
+                            </td>
+                            <td>
+                                <a asp-action="Detail" asp-route-id="@item.Id" class="btn btn-outline-primary">Detail</a>
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-secondary">Edit</a>
+                                <form asp-action="Delete" asp-route-id="@item.Id" method="post" style="display:inline;">
+                                    <button type="submit" class="btn btn-outline-danger">Delete</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    }
+
+</div>

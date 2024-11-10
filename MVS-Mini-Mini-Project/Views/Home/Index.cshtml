@@ -1022,88 +1022,32 @@
                     <span class="banner-header-text">Lastest News</span>
                     <div class="lastest-news">
                         <div class="owl-carousel-3 owl-carousel">
-                            <div class="">
-                                <div class="row">
+                            @foreach (var item in Model.News)
+                            {
+                                <div class="">
+                                    <div class="row">
 
-                                    <div class="col-12 col-lg-6">
-                                        <img src="./assets/img/blog-3_2x.webp" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="col-12 col-lg-6">
-                                        <h6 style="font-weight: 900; font-family: 'Raleway';text-transform: uppercase; font-size: 14px;">
-                                            Turpis at
-                                            eleifend leo mi elit Aenean porta ac sed faucibus
-                                        </h6>
-                                        <h6 class="mt-1 latest-news-text">
-                                            Mi vitae magnis Fusce laoreet nibh felis
-                                            porttitor
-                                            laoreet
-                                            Vestibulum faucibus. At Nulla
-                                            id tincidunt ut sed semper vel Lorem...
-                                        </h6>
-                                        <div class="d-flex justify-content-between align-items-center">
+                                        <div class="col-12 col-lg-6">
+                                            <img src="./assets/img/@item.Image" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <h6 style="font-weight: 900; font-family: 'Raleway';text-transform: uppercase; font-size: 14px;">
+                                                @item.Title
+                                            </h6>
+                                            <h6 class="mt-1 latest-news-text">
+                                                @item.Desc
+                                            </h6>
+                                            <div class="d-flex justify-content-between align-items-center">
 
-                                            <span class="latest-news-date mt-1">March 17, 2015 0 comments</span>
-                                            <span class="latest-read-more me-4">
-                                                read more<i class="fa-solid fa-right-long"></i>
-                                            </span>
+                                                <span class="latest-read-more me-4">
+                                                    read more<i class="fa-solid fa-right-long"></i>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="">
-                                <div class="row">
-
-                                    <div class="col-12 col-lg-6">
-                                        <img src="./assets/img/blog-1_2x.webp" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="col-12 col-lg-6">
-                                        <h6 style="font-weight: 900; font-family: 'Raleway';text-transform: uppercase; font-size: 14px;">
-                                            Donec tellus Nulla lorem Nullam elit id ut elit feugiat lacus
-                                        </h6>
-                                        <h6 class="mt-1 latest-news-text">
-                                            Mi vitae magnis Fusce laoreet nibh felis
-                                            porttitor
-                                            laoreet
-                                            Vestibulum faucibus. At Nulla
-                                            id tincidunt ut sed semper vel Lorem...
-                                        </h6>
-                                        <div class="d-flex justify-content-between align-items-center">
-
-                                            <span class="latest-news-date mt-1">March 17, 2015 0 comments</span>
-                                            <span class="latest-read-more me-4">
-                                                read more<i class="fa-solid fa-right-long"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="">
-                                <div class="row">
-
-                                    <div class="col-12 col-lg-6">
-                                        <img src="./assets/img/blog-1_2x.webp" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="col-12 col-lg-6">
-                                        <h6 style="font-weight: 900; font-family: 'Raleway';text-transform: uppercase; font-size: 14px;">
-                                            Donec tellus Nulla lorem Nullam elit id ut elit feugiat lacus
-                                        </h6>
-                                        <h6 class="mt-1 latest-news-text">
-                                            Mi vitae magnis Fusce laoreet nibh felis
-                                            porttitor
-                                            laoreet
-                                            Vestibulum faucibus. At Nulla
-                                            id tincidunt ut sed semper vel Lorem...
-                                        </h6>
-                                        <div class="d-flex justify-content-between align-items-center">
-
-                                            <span class="latest-news-date mt-1">March 17, 2015 0 comments</span>
-                                            <span class="latest-read-more me-4">
-                                                read more<i class="fa-solid fa-right-long"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            }
+                            
                         </div>
                     </div>
                 </div>
@@ -1186,54 +1130,15 @@
             <span class="banner-header-text">top brands</span>
             <div class="brands bg-white">
                 <div class="row p-4">
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="col-6">
-                            <img src="./assets/img/vendor_logo_7_2x.jpg" alt="">
+                    @foreach (var item in Model.Brands)
+                    {
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="col-6">
+                                <img src="./assets/img/@item.Image" alt="">
+                            </div>
                         </div>
-                        <div class="col-6">
-                            <img src="./assets/img/vendor_logo_3_2x.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="col-6 ">
-                            <img src="./assets/img/vendor_logo_5_2x.jpg" alt="">
-                        </div>
-                        <div class="col-6">
-                            <img src="./assets/img/vendor_logo_7_2x.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="col-6">
-                            <img src="./assets/img/vendor_logo_3_2x.jpg" alt="">
-                        </div>
-                        <div class="col-6">
-                            <img src="./assets/img/vendor_logo_5_2x.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="col-6">
-                            <img src="./assets/img/vendor_logo_2_2x.jpg" alt="">
-                        </div>
-                        <div class="col-6">
-                            <img src="./assets/img/vendor_logo_4_2x.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="col-6">
-                            <img src="./assets/img/vendor_logo_2_2x.jpg" alt="">
-                        </div>
-                        <div class="col-3 col-lg-2">
-                            <img src="./assets/img/vendor_logo_4_2x.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="col-6">
-                            <img src="./assets/img/vendor_logo_2_2x.jpg" alt="">
-                        </div>
-                        <div class="col-3 col-lg-2">
-                            <img src="./assets/img/vendor_logo_4_2x.jpg" alt="">
-                        </div>
-                    </div>
+                    }
+                    
                 </div>
             </div>
         </div>
