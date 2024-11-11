@@ -24,8 +24,14 @@ namespace MVS_Mini_Mini_Project.Controllers
                 Sliders = await _context.Sliders.ToListAsync(),
                 Banners = await _context.Banners.OrderByDescending(x => x.Id).ToListAsync(),
                 Brands = await _context.Brands.Take(12).ToListAsync(),
-                News = await _context.News.ToListAsync()
-            });
+                News = await _context.News.ToListAsync(),
+                Products = await _context.Products.Include(x => x.Category)
+                                               .Include(x => x.Images)
+                                               .Include(x => x.Discount)
+                                               .Include(x => x.BanType)
+                                               .OrderByDescending(x => x.Id)
+                                               .ToListAsync()
+        });
         }
     }
 }

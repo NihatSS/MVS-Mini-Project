@@ -25,7 +25,7 @@ namespace MVS_Mini_Mini_Project.Areas.Admin.Controllers
                                                .Include(x=>x.Images)
                                                .Include(x=>x.Discount)
                                                .Include(x=>x.BanType)
-                                               .Include(x=>x.Images)
+                                               .OrderByDescending(x => x.Id)
                                                .ToListAsync());
         }
 
@@ -35,9 +35,10 @@ namespace MVS_Mini_Mini_Project.Areas.Admin.Controllers
         {
             if (id is null) return BadRequest();
 
-            Product product = await _context.Products.Include(x=>x.Category)
-                                                     .Include(x=>x.BanType)
-                                                     .Include(x=>x.Discount)
+            Product product = await _context.Products.Include(x => x.Category)
+                                                     .Include(x => x.Images)
+                                                     .Include(x => x.Discount)
+                                                     .Include(x => x.BanType)
                                                      .FirstOrDefaultAsync(m => m.Id == id);
 
             if (product is null) return NotFound();
@@ -73,11 +74,7 @@ namespace MVS_Mini_Mini_Project.Areas.Admin.Controllers
             {
                 ModelState.AddModelError("Product.Name", "Product with this name already exists");
 
-                model.Categories = await _context.Categories.ToListAsync();
-                model.BanTypes = await _context.BanTypes.ToListAsync();
-                model.Discounts = await _context.Discounts.ToListAsync();
-
-                return View(model);
+                return View();
             }
 
             var product = new Product

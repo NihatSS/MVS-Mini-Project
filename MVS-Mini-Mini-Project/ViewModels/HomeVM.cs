@@ -9,5 +9,6 @@ namespace MVS_Mini_Mini_Project.ViewModels
         public List<SliderImage> SliderImages { get; set; }
         public List<Banner> Banners { get; set; }
         public List<News> News { get; set; }
+        public List<Product> Products { get; set; }
     }
 }
