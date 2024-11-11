@@ -1,24 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|c:\\users\\user\\onedrive\\desktop\\pb102_tasks\\mini projects\\mvs-mini-mini-project\\mvs-mini-mini-project\\viewmodels\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF91AD4B-D598-4B7E-AF49-68F50507252F}|MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project.csproj|solutionrelative:mvs-mini-mini-project\\viewmodels\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -26,60 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "MVS-Mini-Mini-Project\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T13:49:52.358Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "MVS-Mini-Mini-Project\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAIQBAAAAAAAAAAAgwJUBAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-11T13:47:44.354Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "MVS-Mini-Mini-Project\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAQwBQAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T13:46:41.59Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomeVM.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\ViewModels\\HomeVM.cs",
-              "RelativeDocumentMoniker": "MVS-Mini-Mini-Project\\ViewModels\\HomeVM.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\ViewModels\\HomeVM.cs",
-              "RelativeToolTip": "MVS-Mini-Mini-Project\\ViewModels\\HomeVM.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T13:46:26.399Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
