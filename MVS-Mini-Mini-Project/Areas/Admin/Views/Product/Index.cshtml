@@ -14,7 +14,7 @@
                             Name
                         </th>
                         <th>
-                            Sort description
+                            Description
                         </th>
                         <th>
                             Price
@@ -50,13 +50,15 @@
                                 }
                                 else
                                 {
-                                    <span style="color:red;">@(item.Price * (item.Discount.DiscountPercent / 100))</span>
-                                    <span style="text-decoration:line-through">@item.Name</span>
+                                    <span style="color:red;">
+                                        @(Convert.ToDecimal(item.Price) * (1 - (item.Discount.DiscountPercent / 100m)))
+                                    </span>
+                                    <span style="text-decoration:line-through">@item.Price</span>
                                 }
                                 
                             </td>
                             <td>
-                                <img src="@item.Images.FirstOrDefault(x=>x.IsMain).Image" alt="" style="width:100px; height:100px" />
+                                <img src="~/assets/img/@item.Images.FirstOrDefault(x=>x.IsMain).Image" alt="" style="width:100px; height:100px" />
                             </td>
                             <td>
                                 @item.Category.Name

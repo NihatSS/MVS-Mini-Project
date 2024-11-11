@@ -1,4 +1,6 @@
-﻿<header>
+﻿@model List<Category>
+
+<header>
     <div class="sidebar">
         <div class="container mt-2">
             <div class="d-block text-center">
@@ -14,8 +16,8 @@
                 <a href="./index.html" class="sidebar-link">></a>
             </div>
             <div class="d-flex justify-content-between mt-3">
-                <a href="./shop.html" class="sidebar-link">Collection</a>
-                <a href="./shop.html" class="sidebar-link">></a>
+                <a asp-controller="Shop" asp-action="Index" class="sidebar-link">Collection</a>
+                <a asp-controller="Shop" asp-action="Index" class="sidebar-link">></a>
             </div>
             <div class="d-flex justify-content-between mt-3">
                 <a href="./product.html" class="sidebar-link">Product</a>
@@ -124,7 +126,7 @@
                 </div>
             </button>
             <button class="navbar-menu-buttons navbar-collection-button align-items-center position-relative">
-                <span> <a href="./shop.html" style="color: black;">COLLECTION</a> <i class="fa-solid fa-sort-down"></i></span>
+                <span> <a asp-controller="Shop" asp-action="Index" style="color: black;">COLLECTION</a> <i class="fa-solid fa-sort-down"></i></span>
                 <div class="position-absolute collection-dropdown">
                     <ul class="mt-2">
                         <li>Left Sidebar Grid</li>
@@ -249,81 +251,16 @@
                 <i class="fa-solid fa-bars mx-2"></i>
                 <span class="mx-5 browse-categories-text">BROWSER CATEGORIES</span>
                 <div class="position-absolute browse-categories-dropdown">
-                    <div class="position-absolute mx-5 bg-white chevrolet">
-                        <div class="row">
-                            <div class="col-6 chevrolet-texts">
-                                <h6 class="chevrolet-sidebar-text p-3">Category</h6>
-
-                                <a href="#" class="p-3">Phasellus eu auctor justo</a>
-                                <a href="#" class="p-3">Phasellus eu auctor justo</a>
-                                <a href="#" class="p-3">Phasellus eu auctor justo</a>
-                                <a href="#" class="p-3">Phasellus eu auctor justo</a>
-
-                            </div>
-                            <div class="col-6 chevrolet-close-col-1">
-                                <h6 class="chevrolet-sidebar-text p-3">Shop by Style</h6>
-
-                                <a href="#" class="p-3">Phasellus eu auctor justo</a>
-                                <a href="#" class="p-3">Phasellus eu auctor justo</a>
-                                <a href="#" class="p-3">Phasellus eu auctor justo</a>
-                                <a href="#" class="p-3">Phasellus eu auctor justo</a>
-
-                            </div>
-                            <div class="col-6 chevrolet-close-col-2">
-                                <h6 class="chevrolet-sidebar-text p-3">Shop by Style</h6>
-
-                                <a href="#" class="p-3 d-block">Phasellus eu auctor justo</a>
-                                <a href="#" class="p-3 d-block">Phasellus eu auctor justo</a>
-                                <a href="#" class="p-3 d-block">Phasellus eu auctor justo</a>
-                                <a href="#" class="p-3 d-block">Phasellus eu auctor justo</a>
-                            </div>
-                            <div class="col-6 position-absolute chevrolet-close-col-3" style="bottom: 0;right: 0;">
-                                <img src="./assets/img/vermenuitem_image_1.jpg" class="mt-5 img-fluid" alt="">
-                            </div>
+                    <div class="position-absolute mx-5 chevrolet">
+                    </div>
+                    
+                    @foreach (var item in Model)
+                    {
+                        <div class="honda car mt-3">
+                            <img src="./assets/img/@item.Image" class="img-fluid car-logo" alt="">
+                            <span class="car-brand">@item.Name</span>
                         </div>
-                    </div>
-                    <div class="honda car">
-                        <img src="./assets/img/vertical_icon_1.png" class="img-fluid car-logo" alt="">
-                        <span class="car-brand">HONDA</span>
-                    </div>
-                    <div class="honda chevrolettt car mt-3">
-                        <img src="./assets/img/vertical_icon_2.png" class="img-fluid car-logo" alt="">
-                        <span class="car-brand">CHEVROLET</span>
-                        <i class="fa-solid fa-plus"></i>
-                        <i class="fa-solid fa-minus d-none"></i>
-                    </div>
-                    <div class="honda car mt-3">
-                        <img src="./assets/img/vertical_icon_3.png" class="img-fluid car-logo" alt="">
-                        <span class="car-brand">FORD</span>
-                    </div>
-                    <div class="honda car mt-3">
-                        <img src="./assets/img/vertical_icon_4.png" class="img-fluid car-logo" alt="">
-                        <span class="car-brand">AUDI</span>
-                    </div>
-                    <div class="honda car mt-3">
-                        <img src="./assets/img/vertical_icon_5.png" class="img-fluid car-logo" alt="">
-                        <span class="car-brand">MITSUBISHI</span>
-                    </div>
-                    <div class="honda car mt-3">
-                        <img src="./assets/img/vertical_icon_6.png" class="img-fluid car-logo" alt="">
-                        <span class="car-brand">NISSAN</span>
-                    </div>
-                    <div class="honda car mt-3">
-                        <img src="./assets/img/vertical_icon_7.png" class="img-fluid car-logo" alt="">
-                        <span class="car-brand">PORSCHE</span>
-                    </div>
-                    <div class="honda car mt-3">
-                        <img src="./assets/img/vertical_icon_8.png" class="img-fluid car-logo" alt="">
-                        <span class="car-brand">TOYOTA</span>
-                    </div>
-                    <div class="honda car mt-3">
-                        <img src="./assets/img/vertical_icon_9.png" class="img-fluid car-logo" alt="">
-                        <span class="car-brand">SUZUKI</span>
-                    </div>
-                    <div class="honda car mt-3">
-                        <img src="./assets/img/vertical_icon_10.png" class="img-fluid car-logo" alt="">
-                        <span class="car-brand">YAMAHA</span>
-                    </div>
+                    }
                 </div>
             </div>
             <div class="search-bar d-flex">

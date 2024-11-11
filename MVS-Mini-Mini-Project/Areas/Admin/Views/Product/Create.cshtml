@@ -1,1 +1,47 @@
-﻿
+﻿@model ProductCreateVM
+
+<div class="container mt-5">
+    <h3 class="text-center">Create new category</h3>
+    <form asp-action="Create" method="post" enctype="multipart/form-data">
+        <input type="text" asp-for="Product.Name" class="form-control mt-5" placeholder="Enter product's name...">
+        <span class="text-danger d-block" asp-validation-for="Product.Name"></span>
+
+        <input type="text" asp-for="Product.Desc" class="form-control mt-3" placeholder="Enter product's description...">
+        <span class="text-danger d-block" asp-validation-for="Product.Desc"></span>
+
+        <input type="number" asp-for="Product.Price" class="form-control mt-3" placeholder="Enter product's price...">
+        <span class="text-danger d-block" asp-validation-for="Product.Price"></span>
+
+        <span>Category:</span>
+        <select class="form-select mt-3" asp-for="Product.CategoryId" aria-label="Select Category">
+            @foreach (var item in Model.Categories)
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+        </select>
+        <br />
+
+        <span>Ban type:</span>
+        <select class="form-select mt-3" asp-for="Product.BanTypeId" aria-label="Select Ban Type">
+            @foreach (var item in Model.BanTypes)
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+        </select>
+        <br />
+
+        <span>Discount:</span>
+        <select class="form-select mt-3" asp-for="Product.DiscountId" aria-label="Select Discount">
+            @foreach (var item in Model.Discounts)
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+        </select>
+
+
+        <input asp-for="Product.UploadedImages" class="form-control mt-3" multiple>
+        <span class="text-danger d-block" asp-validation-for="Product.UploadedImages"></span>
+        <button type="submit" class="btn btn-success mr-2 mt-3">Submit</button>
+        <a asp-action="Index" class="btn btn-primary mx-2 mt-3">Cancel</a>
+    </form>
+</div>

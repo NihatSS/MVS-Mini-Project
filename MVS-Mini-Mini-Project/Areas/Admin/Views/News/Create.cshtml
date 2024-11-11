@@ -3,9 +3,9 @@
 <div class="container mt-5">
     <h3 class="text-center">Create new news</h3>
     <form asp-action="Create" method="post" enctype="multipart/form-data">
-        <input type="text" asp-for="Title" class="form-control mt-5" placeholder="Enter category's name">
+        <input type="text" asp-for="Title" class="form-control mt-5" placeholder="Enter news's title...">
         <span class="text-danger d-block" asp-validation-for="Title"></span>
-        <input type="text" asp-for="Desc" class="form-control mt-5" placeholder="Enter category's name">
+        <input type="text" asp-for="Desc" class="form-control mt-5" placeholder="Enter category's description...">
         <span class="text-danger d-block" asp-validation-for="Desc"></span>
         <input asp-for="Photo" class="form-control mt-5">
         <span class="text-danger d-block" asp-validation-for="Photo"></span>

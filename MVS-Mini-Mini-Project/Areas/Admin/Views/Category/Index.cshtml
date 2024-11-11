@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Category>
+﻿@model List<Category>
 <div class="container mt-5">
     <h1 class="text-center">Categories</h1>
     <div class="create-area">
@@ -14,6 +14,9 @@
                             Name
                         </th>
                         <th>
+                            Image
+                        </th>
+                        <th>
                             Options
                         </th>
                     </tr>
@@ -24,6 +27,9 @@
                         <tr>
                             <td>
                                 @item.Name
+                            </td>
+                            <td>
+                                <img src="~/assets/img/@item.Image" alt="Alternate Text" />
                             </td>
                             <td>
                                 <a asp-action="Detail" asp-route-id="@item.Id" class="btn btn-outline-primary">Detail</a>

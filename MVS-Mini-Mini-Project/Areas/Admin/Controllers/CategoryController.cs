@@ -20,8 +20,7 @@ namespace MVS_Mini_Mini_Project.Areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            IEnumerable<Category> categories = await _context.Categories.OrderByDescending(m => m.Id).ToListAsync();
-            return View(categories);
+            return View(await _context.Categories.OrderByDescending(m => m.Id).ToListAsync());
         }
 
         [HttpGet]
@@ -37,18 +36,17 @@ namespace MVS_Mini_Mini_Project.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Delete(int? id)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(int id)
         {
-            if (id is null) return BadRequest();
+            var category = await _context.Categories.FindAsync(id);
 
-            var category = await _context.Categories.FirstOrDefaultAsync(x => x.Id == id);
+            string existPath = Path.Combine(_env.WebRootPath, "assets/img", category.Image);
 
-            if (category == null) return NotFound();
+            DeleteFile(existPath);
+
             _context.Categories.Remove(category);
-            foreach (var item in _context.Products.Where(x => x.Category.Name == category.Name))
-            {
-                _context.Products.Remove(item);
-            }
+
             await _context.SaveChangesAsync();
 
             return RedirectToAction(nameof(Index));
@@ -69,15 +67,17 @@ namespace MVS_Mini_Mini_Project.Areas.Admin.Controllers
                 return View();
             }
 
-            bool hasCategory = await _context.Categories.AnyAsync(m => m.Name.Trim() == category.Name.Trim());
+            string fileName = Guid.NewGuid().ToString() + "_" + category.Photo.FileName;
 
-            if (hasCategory)
+            string path = Path.Combine(_env.WebRootPath, "assets/img", fileName);
+
+            using (FileStream stream = new(path, FileMode.Create))
             {
-                ModelState.AddModelError("Name", "Category already exist");
-                return View();
+                await category.Photo.CopyToAsync(stream);
             }
 
-            await _context.Categories.AddAsync(new Category { Name = category.Name });
+            await _context.Categories.AddAsync(new Category { Image = fileName, Name = category.Name });
+
             await _context.SaveChangesAsync();
 
             return RedirectToAction(nameof(Index));
@@ -122,6 +122,14 @@ namespace MVS_Mini_Mini_Project.Areas.Admin.Controllers
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
+        }
+
+        private void DeleteFile(string path)
+        {
+            if (System.IO.File.Exists(path))
+            {
+                System.IO.File.Delete(path);
+            }
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MVS_Mini_Mini_Project.Data;
 using MVS_Mini_Mini_Project.Models;
@@ -110,6 +109,8 @@ namespace MVS_Mini_Mini_Project.Areas.Admin.Controllers
             SliderImage sliderImage = await _context.SliderImages.FirstOrDefaultAsync(m => m.Id == id);
 
             if (sliderImage is null) return NotFound();
+
+            if (!ModelState.IsValid) return View();
 
             if (request.Photo != null)
             {

@@ -1,0 +1,14 @@
+﻿@model Product
+<div class="container mt-5">
+    <h4>Product name: @Model.Name</h4>
+    <h4>Product description: @Model.Desc</h4>
+    <h4>Product price: @Model.Price</h4>
+    <h4>Category name: @Model.Category.Name</h4>
+    <h4>Discount name: @Model.Discount.Name</h4>
+    <h4>Ban type name: @Model.BanType.Name</h4>
+    @foreach (var item in Model.Images)
+    {
+        <img src="~/assets/img/@item.Image" alt="Alternate Text" style="@(item.IsMain ? "border:5px solid yellow" : "")" />
+    }
+    <a asp-action="Index" class="btn btn-primary mt-5">Back</a>
+</div>

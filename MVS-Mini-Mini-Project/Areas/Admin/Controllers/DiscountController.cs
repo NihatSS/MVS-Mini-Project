@@ -93,6 +93,7 @@ namespace MVS_Mini_Mini_Project.Areas.Admin.Controllers
 
             if (discount is null) return NotFound();
 
+
             return View(discount);
         }
 

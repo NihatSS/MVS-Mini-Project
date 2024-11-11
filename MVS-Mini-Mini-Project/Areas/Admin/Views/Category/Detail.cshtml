@@ -1,5 +1,6 @@
 ﻿@model Category
 <div class="container mt-5">
-    <h1>Category name: @Model.Name</h1>
+    <h4>Category name: @Model.Name</h4>
+    <img src="~/assets/img/@Model.Image" alt="Alternate Text" />
     <a asp-action="Index" class="btn btn-primary mt-5">Back</a>
 </div>

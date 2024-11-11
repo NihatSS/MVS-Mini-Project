@@ -236,6 +236,23 @@ namespace MVS_Mini_Mini_Project.Migrations
                     b.ToTable("Banners");
                 });
 
+            modelBuilder.Entity("MVS_Mini_Mini_Project.Models.BanTypes", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("BanTypes");
+                });
+
             modelBuilder.Entity("MVS_Mini_Mini_Project.Models.Brand", b =>
                 {
                     b.Property<int>("Id")
@@ -260,6 +277,9 @@ namespace MVS_Mini_Mini_Project.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -281,6 +301,7 @@ namespace MVS_Mini_Mini_Project.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -320,6 +341,9 @@ namespace MVS_Mini_Mini_Project.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<int>("BanTypesId")
+                        .HasColumnType("int");
+
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
@@ -339,6 +363,8 @@ namespace MVS_Mini_Mini_Project.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("BanTypesId");
 
                     b.HasIndex("CategoryId");
 
@@ -461,6 +487,12 @@ namespace MVS_Mini_Mini_Project.Migrations
 
             modelBuilder.Entity("MVS_Mini_Mini_Project.Models.Product", b =>
                 {
+                    b.HasOne("MVS_Mini_Mini_Project.Models.BanTypes", "BanTypes")
+                        .WithMany()
+                        .HasForeignKey("BanTypesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("MVS_Mini_Mini_Project.Models.Category", "Category")
                         .WithMany()
                         .HasForeignKey("CategoryId")
@@ -472,6 +504,8 @@ namespace MVS_Mini_Mini_Project.Migrations
                         .HasForeignKey("DiscountId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("BanTypes");
 
                     b.Navigation("Category");
 

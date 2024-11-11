@@ -10,12 +10,10 @@ namespace MVS_Mini_Mini_Project.Areas.Admin.Controllers
     public class SliderController : Controller
     {
         private readonly AppDbContext _context;
-        private readonly IWebHostEnvironment _env;
 
-        public SliderController(AppDbContext context, IWebHostEnvironment env)
+        public SliderController(AppDbContext context)
         {
             _context = context;
-            _env = env;
         }
 
         [HttpGet]
@@ -54,11 +52,11 @@ namespace MVS_Mini_Mini_Project.Areas.Admin.Controllers
         {
             if (id is null) return BadRequest();
 
-            Slider category = await _context.Sliders.FirstOrDefaultAsync(m => m.Id == id);
+            Slider slider = await _context.Sliders.FirstOrDefaultAsync(m => m.Id == id);
 
-            if (category is null) return NotFound();
+            if (slider is null) return NotFound();
 
-            return View(category);
+            return View(slider);
         }
 
         [HttpGet]
@@ -91,15 +89,6 @@ namespace MVS_Mini_Mini_Project.Areas.Admin.Controllers
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
-        }
-
-
-        private void DeleteFile(string path)
-        {
-            if (System.IO.File.Exists(path))
-            {
-                System.IO.File.Delete(path);
-            }
         }
     }
 }
