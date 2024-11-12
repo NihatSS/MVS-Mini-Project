@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "whCNwR1lkijc/uDRg3fC0w9hiX5Rc29lIoivif3gpfo=",
+  "Hash": "V9g1ZwzRcGi5lBJQbYFhZ4dM/9687JvlyfWCCXOuI8I=",
   "Source": "MVS-Mini-Mini-Project",
   "BasePath": "_content/MVS-Mini-Mini-Project",
   "Mode": "Default",
@@ -9838,6 +9838,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\js\\bootstrap.js"
+    },
+    {
+      "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\js\\custom.js",
+      "SourceId": "MVS-Mini-Mini-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\",
+      "BasePath": "_content/MVS-Mini-Mini-Project",
+      "RelativePath": "assets/js/custom.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\custom.js"
     },
     {
       "Identity": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\js\\home.js",

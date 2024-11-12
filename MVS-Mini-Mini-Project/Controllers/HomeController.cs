@@ -1,18 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MVS_Mini_Mini_Project.Data;
-using MVS_Mini_Mini_Project.Models;
 using MVS_Mini_Mini_Project.ViewModels;
+using Newtonsoft.Json;
 
 namespace MVS_Mini_Mini_Project.Controllers
 {
     public class HomeController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly IHttpContextAccessor _httpContext;
 
-        public HomeController(AppDbContext context)
+        public HomeController(AppDbContext context,
+                              IHttpContextAccessor httpContext)
         {
             _context = context;
+            _httpContext = httpContext;
         }
 
         [HttpGet]
@@ -31,7 +34,42 @@ namespace MVS_Mini_Mini_Project.Controllers
                                                .Include(x => x.BanType)
                                                .OrderByDescending(x => x.Id)
                                                .ToListAsync()
-        });
+            });
         }
+
+        [HttpPost]
+        public async Task<IActionResult> AddProductToBusket(int id)
+        {
+            List<BasketVM> basket;
+
+            if (_httpContext.HttpContext.Request.Cookies["basket"] != null)
+            {
+                basket = JsonConvert.DeserializeObject<List<BasketVM>>(_httpContext.HttpContext.Request.Cookies["basket"]);
+            }
+            else
+            {
+                basket = new List<BasketVM>();
+            }
+
+            var existBasketData = basket.FirstOrDefault(x => x.ProductId == id);
+
+            if (existBasketData is null)
+            {
+                basket.Add(new BasketVM
+                {
+                    ProductId = id,
+                    ProductCount = 1
+                });
+            }
+            else
+            {
+                existBasketData.ProductCount++;
+            }
+
+            _httpContext.HttpContext.Response.Cookies.Append("basket", JsonConvert.SerializeObject(basket));
+
+            return Ok(basket.Sum(x=>x.ProductCount));
+        }
+
     }
 }

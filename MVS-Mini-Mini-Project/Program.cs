@@ -16,6 +16,7 @@ builder.Services.AddIdentity<AppUser, IdentityRole>()
                 .AddDefaultTokenProviders();
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddSingleton<IHttpContextAccessor,HttpContextAccessor>();
 
 var app = builder.Build();
 

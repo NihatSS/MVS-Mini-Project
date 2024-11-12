@@ -2069,6 +2069,10 @@
       "PackagePath": "staticwebassets\\assets\\js\\bootstrap.js"
     },
     {
+      "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\js\\custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\custom.js"
+    },
+    {
       "Id": "C:\\Users\\user\\OneDrive\\Desktop\\pb102_tasks\\Mini Projects\\MVS-Mini-Mini-Project\\MVS-Mini-Mini-Project\\wwwroot\\assets\\js\\home.js",
       "PackagePath": "staticwebassets\\assets\\js\\home.js"
     },

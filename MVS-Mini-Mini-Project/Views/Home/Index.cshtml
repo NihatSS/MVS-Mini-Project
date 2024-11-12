@@ -87,7 +87,7 @@
                                             <div class="card-bottom p-2">
                                                 <div class="row">
                                                     <div class="col-4">
-                                                        <button class="card-button">select options</button>
+														<button data-id="@item.Id" class="card-button"> add to cart</button>
                                                     </div>
                                                     <div class="col-8 align-items-center">
                                                         <span class="card-description">
@@ -119,256 +119,70 @@
                         </div>
                         <div class="col-12 d-flex justify-content-between">
                             <div class="owl-carousel owl-carousel-2">
-                                <div class="">
-                                    <div class="big-card">
-                                        <h6 class="card-top-title">Quam Vitnibh aliquebo</h6>
-                                        <div class="card-img">
-                                            <div class="right-images vis-hidden">
-                                                <h6 class="text-center">
-                                                    <a href="">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </a>
-                                                </h6>
-                                                <div class="col-12">
-                                                    <img src="./assets/img/card3-2.webp" alt="" class="img-fluid">
+                                @for (int i = 0; i < 4; i++)
+                               {
+                                    <div class="">
+                                        <div class="big-card">
+                                            <h6 class="card-top-title">Quam Vitnibh aliquebo</h6>
+                                            <div class="card-img">
+                                                <div class="right-images vis-hidden">
+                                                    @if (Model.Products[i].Images.Where(x => x.IsMain == false).Count() != 0)
+                                                    {
+                                                        <h6 class="text-center">
+                                                            <a href="">
+                                                                <i class="fa-solid fa-chevron-up"></i>
+                                                            </a>
+                                                        </h6>
+                                                        @foreach (var item in Model.Products[i].Images.Where(x => x.IsMain == false))
+                                                        {
+                                                            <div class="col-12">
+                                                                <img src="./assets/img/@item.Image" alt="" class="img-fluid">
+                                                            </div>
+                                                        }
+                                                        <h6 class="text-center">
+                                                            <a href="">
+                                                                <i class="fa-solid fa-chevron-down"></i>
+                                                            </a>
+                                                        </h6>
+                                                    }
                                                 </div>
-                                                <div class="col-12 mt-1">
-                                                    <img src="./assets/img/card2-2.webp" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="col-12 mt-1">
-                                                    <img src="./assets/img/card1-2.webp" alt="" class="img-fluid">
-                                                </div>
-                                                <h6 class="text-center">
-                                                    <a href="">
-                                                        <i class="fa-solid fa-chevron-down"></i>
-                                                    </a>
-                                                </h6>
+                                                <img src="./assets/img/@Model.Products[i].Images.FirstOrDefault(x => x.IsMain).Image" alt=""
+                                                     class="img-fluid main-image">
                                             </div>
-                                            <span class="card-tag">
-                                                <span class="card-tag-text">new</span>
-                                            </span>
-                                            <img src="./assets/img/card3-2.webp" alt=""
-                                                 class="img-fluid main-image">
-                                        </div>
-                                        <div class="price w-100">
-                                            <div class="sale-box">
-                                                <span class="text-center">sale</span>
-                                            </div>
-                                            <div class="price-box">
-                                                <span class="card-sale-price d-inline">$1550.00</span>
-                                                <span class="card-discount-price">$2350.00</span>
+                                            <div class="price w-100">
+                                                @if (Model.Products[i].Discount.Name != "null")
+                                                {
+                                                    <div class="sale-box">
+                                                        <span class="text-center">sale</span>
+                                                    </div>
+                                                }
+                                                <div class="price-box">
+                                                    <span class="card-sale-price d-inline">$1550.00</span>
+                                                    <span class="card-discount-price">$2350.00</span>
+
+                                                </div>
 
                                             </div>
-
-                                        </div>
-                                        <div class="expired-box">
-                                            <span class="d-block">Expired</span>
-                                        </div>
-                                        <div class="card-bottom p-2">
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <button class="card-button">add to cart</button>
-                                                </div>
-                                                <div class="col-8 align-items-center">
-                                                    <span class="card-description">
-                                                        Lorem ipsum dolor sit amet
-                                                        consectetur
-                                                        adipisicing elit. A voluptate suscipit error iure, molestias
-                                                        reprehenderit deserunt sapiente ...
-                                                    </span>
-                                                    <div class="card-description-icons gap-5 disable">
-                                                        <a href=""><i class="fa-solid fa-heart"></i></a>
-                                                        <a href=""><i class="fa-solid fa-info"></i></a>
-                                                        <a href=""><i class="fa-solid fa-eye"></i></a>
+                                            <div class="card-bottom p-2">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <button data-id="@Model.Products[i].Id" class="card-button"> add to cart</button>
+                                                    </div>
+                                                    <div class="col-8 align-items-center">
+                                                        <span class="card-description">
+                                                            @Model.Products[i].SortDesc
+                                                        </span>
+                                                        <div class="card-description-icons gap-5 disable">
+                                                            <a href=""><i class="fa-solid fa-heart"></i></a>
+                                                            <a href=""><i class="fa-solid fa-info"></i></a>
+                                                            <a href=""><i class="fa-solid fa-eye"></i></a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="">
-                                    <div class="big-card">
-                                        <h6 class="card-top-title">Quam Vitnibh aliquebo</h6>
-                                        <div class="card-img">
-                                            <div class="right-images vis-hidden">
-                                                <h6 class="text-center">
-                                                    <a href="">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </a>
-                                                </h6>
-                                                <div class="col-12">
-                                                    <img src="./assets/img/card5-2.webp" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="col-12 mt-1">
-                                                    <img src="./assets/img/card2-2.webp" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="col-12 mt-1">
-                                                    <img src="./assets/img/card1-2.webp" alt="" class="img-fluid">
-                                                </div>
-                                                <h6 class="text-center">
-                                                    <a href="">
-                                                        <i class="fa-solid fa-chevron-down"></i>
-                                                    </a>
-                                                </h6>
-                                            </div>
-                                            <span class="card-tag">
-                                                <span class="card-tag-text">new</span>
-                                            </span>
-                                            <img src="./assets/img/card5-2.webp" alt=""
-                                                 class="img-fluid main-image">
-                                        </div>
-
-                                        <div class="price-box">
-                                            <span class="card-price d-inline">$1550.00</span>
-
-                                        </div>
-                                        <div class="expired-box">
-                                            <span class="d-block">Expired</span>
-                                        </div>
-                                        <div class="card-bottom p-2">
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <button class="card-button">add to cart</button>
-                                                </div>
-                                                <div class="col-8 align-items-center">
-                                                    <span class="card-description">
-                                                        Lorem ipsum dolor sit amet
-                                                        consectetur
-                                                        adipisicing elit. A voluptate suscipit error iure, molestias
-                                                        reprehenderit deserunt sapiente ...
-                                                    </span>
-                                                    <div class="card-description-icons gap-5 disable">
-                                                        <a href=""><i class="fa-solid fa-heart"></i></a>
-                                                        <a href=""><i class="fa-solid fa-info"></i></a>
-                                                        <a href=""><i class="fa-solid fa-eye"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <div class="big-card">
-                                        <h6 class="card-top-title">Quam Vitnibh aliquebo</h6>
-                                        <div class="card-img">
-                                            <div class="right-images vis-hidden">
-                                                <h6 class="text-center">
-                                                    <a href="">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </a>
-                                                </h6>
-                                                <div class="col-12">
-                                                    <img src="./assets/img/card5-2.webp" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="col-12 mt-1">
-                                                    <img src="./assets/img/card2-2.webp" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="col-12 mt-1">
-                                                    <img src="./assets/img/card1-2.webp" alt="" class="img-fluid">
-                                                </div>
-                                                <h6 class="text-center">
-                                                    <a href="">
-                                                        <i class="fa-solid fa-chevron-down"></i>
-                                                    </a>
-                                                </h6>
-                                            </div>
-                                            <span class="card-tag">
-                                                <span class="card-tag-text">new</span>
-                                            </span>
-                                            <img src="./assets/img/card5-2.webp" alt=""
-                                                 class="img-fluid main-image">
-                                        </div>
-
-                                        <div class="price-box">
-                                            <span class="card-price d-inline">$1550.00</span>
-
-                                        </div>
-                                        <div class="expired-box">
-                                            <span class="d-block">Expired</span>
-                                        </div>
-                                        <div class="card-bottom p-2">
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <button class="card-button">add to cart</button>
-                                                </div>
-                                                <div class="col-8 align-items-center">
-                                                    <span class="card-description">
-                                                        Lorem ipsum dolor sit amet
-                                                        consectetur
-                                                        adipisicing elit. A voluptate suscipit error iure, molestias
-                                                        reprehenderit deserunt sapiente ...
-                                                    </span>
-                                                    <div class="card-description-icons gap-5 disable">
-                                                        <a href=""><i class="fa-solid fa-heart"></i></a>
-                                                        <a href=""><i class="fa-solid fa-info"></i></a>
-                                                        <a href=""><i class="fa-solid fa-eye"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <div class="big-card">
-                                        <h6 class="card-top-title">Quam Vitnibh aliquebo</h6>
-                                        <div class="card-img">
-                                            <div class="right-images vis-hidden">
-                                                <h6 class="text-center">
-                                                    <a href="">
-                                                        <i class="fa-solid fa-chevron-up"></i>
-                                                    </a>
-                                                </h6>
-                                                <div class="col-12">
-                                                    <img src="./assets/img/card5-2.webp" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="col-12 mt-1">
-                                                    <img src="./assets/img/card2-2.webp" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="col-12 mt-1">
-                                                    <img src="./assets/img/card1-2.webp" alt="" class="img-fluid">
-                                                </div>
-                                                <h6 class="text-center">
-                                                    <a href="">
-                                                        <i class="fa-solid fa-chevron-down"></i>
-                                                    </a>
-                                                </h6>
-                                            </div>
-                                            <span class="card-tag">
-                                                <span class="card-tag-text">new</span>
-                                            </span>
-                                            <img src="./assets/img/card5-2.webp" alt=""
-                                                 class="img-fluid main-image">
-                                        </div>
-
-                                        <div class="price-box">
-                                            <span class="card-price d-inline">$1550.00</span>
-
-                                        </div>
-                                        <div class="expired-box">
-                                            <span class="d-block">Expired</span>
-                                        </div>
-                                        <div class="card-bottom p-2">
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <button class="card-button">add to cart</button>
-                                                </div>
-                                                <div class="col-8 align-items-center">
-                                                    <span class="card-description">
-                                                        Lorem ipsum dolor sit amet
-                                                        consectetur
-                                                        adipisicing elit. A voluptate suscipit error iure, molestias
-                                                        reprehenderit deserunt sapiente ...
-                                                    </span>
-                                                    <div class="card-description-icons gap-5 disable">
-                                                        <a href=""><i class="fa-solid fa-heart"></i></a>
-                                                        <a href=""><i class="fa-solid fa-info"></i></a>
-                                                        <a href=""><i class="fa-solid fa-eye"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                               }
                             </div>
                         </div>
                     </div>
@@ -418,9 +232,6 @@
                                     }
                                     
                                 </div>
-                                <span class="card-tag">
-                                    <span class="card-tag-text">new</span>
-                                </span>
                                 <img src="./assets/img/@Model.Products[i].Images.FirstOrDefault(x=>x.IsMain).Image" alt="" class="img-fluid main-image">
                             </div>
 
@@ -442,7 +253,7 @@
                             <div class="card-bottom p-2">
                                 <div class="row">
                                     <div class="col-4">
-                                        <button class="card-button">add to cart</button>
+                                        <button data-id="@Model.Products[i].Id" class="card-button"> add to cart</button>
                                     </div>
                                     <div class="col-8 align-items-center">
                                         <span class="card-description">

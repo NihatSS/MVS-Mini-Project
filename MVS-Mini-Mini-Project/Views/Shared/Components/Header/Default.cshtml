@@ -1,4 +1,4 @@
-﻿@model List<Category>
+﻿@model HeaderVM
 
 <header>
     <div class="sidebar">
@@ -124,10 +124,13 @@
                         </a>
                     </div>
                 </button>
-                <button class="btn btn-danger shopping-button">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span class="shopping-text">Cart: 0 items - $0.00</span>
-                </button>
+                <form asp-controller="Basket" asp-action="Index" method="get">
+                    <button type="submit" class="btn btn-danger shopping-button">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="shopping-text">Cart: @Model.BasketCount items</span>
+                    </button>
+                </form>
+
             </div>
         </div>
     </nav>
@@ -139,7 +142,7 @@
             <div style="width: 110px;">
             </div>
             <button class="navbar-menu-buttons navbar-home-button d-flex position-relative">
-                <span class="home-button">HOME </span>
+                <span class="home-button"> <a asp-controller="Home" asp-action="Index" style="color: black;">Home</a> </span>
                 <div class="position-absolute home-dropdown">
                     <ul class="mt-2">
                         <li class="mt-4">Home Style 1</li>
@@ -283,7 +286,7 @@
                     <div class="position-absolute mx-5 chevrolet">
                     </div>
                     
-                    @foreach (var item in Model)
+                    @foreach (var item in Model.Categories)
                     {
                         <div class="honda car mt-3">
                             <img src="./assets/img/@item.Image" class="img-fluid car-logo" alt="">
