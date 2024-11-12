@@ -4,7 +4,7 @@ using MVS_Mini_Mini_Project.Models;
 
 namespace MVS_Mini_Mini_Project.Data
 {
-    public class AppDbContext : IdentityDbContext
+    public class AppDbContext : IdentityDbContext<AppUser>
     {
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
@@ -17,5 +17,7 @@ namespace MVS_Mini_Mini_Project.Data
         public DbSet<Brand> Brands { get; set; }
         public DbSet<BanType> BanTypes { get; set; }
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+
+        
     }
 }

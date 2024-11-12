@@ -26,24 +26,31 @@ namespace MVS_Mini_Mini_Project.Controllers
             return View();
         }
 
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(RegisterVM request)
         {
-
             if (!ModelState.IsValid)
             {
-                return View();
+                return View(request);
+            }
+
+            if (await _userManager.FindByEmailAsync(request.Email) != null)
+            {
+                ModelState.AddModelError("Email", "This email address already has an account!");
+                return View(request);
+            }
+            if (await _userManager.FindByNameAsync(request.Username) != null)
+            {
+                ModelState.AddModelError("Username", "This user already has an account.");
+                return View(request);
             }
 
             AppUser user = new()
             {
-                FullName = request.Fullname,
                 Email = request.Email,
                 UserName = request.Username
             };
-
 
             var result = await _userManager.CreateAsync(user, request.Password);
 
@@ -53,15 +60,15 @@ namespace MVS_Mini_Mini_Project.Controllers
                 {
                     ModelState.AddModelError(string.Empty, item.Description);
                 }
-                return View();
+                return View(request);
             }
 
+            await _userManager.AddToRoleAsync(user, Roles.SuperAdmin.ToString());
+            await _signInManager.SignInAsync(user, isPersistent: false);
 
-            await _userManager.AddToRoleAsync(user, Roles.Member.ToString());
-
-            await _signInManager.SignInAsync(user, false);
             return RedirectToAction("Index", "Home");
         }
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]

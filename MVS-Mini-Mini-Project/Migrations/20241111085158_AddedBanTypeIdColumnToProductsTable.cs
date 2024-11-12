@@ -8,6 +8,14 @@ namespace MVS_Mini_Mini_Project.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.AddForeignKey(
+                name: "FK_Products_BanTypes_BanTypesId",
+                table: "Products",
+                column: "BanTypesId",
+                principalTable: "BanTypes",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Restrict);
+
             migrationBuilder.AddColumn<int>(
                 name: "BanTypesId",
                 table: "Products",
@@ -31,6 +39,10 @@ namespace MVS_Mini_Mini_Project.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropForeignKey(
+                name: "FK_Products_BanTypes_BanTypesId",
+                table: "Products");
+
             migrationBuilder.DropForeignKey(
                 name: "FK_Products_BanTypes_BanTypesId",
                 table: "Products");

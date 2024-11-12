@@ -59,22 +59,48 @@
                         <i class="fa-solid fa-envelope"></i> sales@yourcompany.com
                     </span>
                 </button>
-                <span class="navbar-top-left-span">
-                    Welcome visitor you can
-                    <a asp-controller="Account" asp-action="Login" class="navbar-top-left-a">login</a> or
-                    <a asp-controller="Account" asp-action="Register" class="navbar-top-left-a">create an account</a>
-                </span>
+                @if (!User.Identity.IsAuthenticated)
+                {
+                    <span class="navbar-top-left-span">
+                        Welcome visitor you can
+                        <a asp-controller = "Account" asp-action= "Login" class="navbar-top-left-a">login</a> or
+                        <a asp-controller= "Account" asp-action= "Register" class="navbar-top-left-a">create an account</a>
+                    </span>
+                }
             </div>
             <div class="right-navbar-items d-flex gap-2">
                 <button class="navbar-top-right-button user-button">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <span>@User.Identity.Name</span>
+                    }
                     <i class="fa-solid fa-user "></i>
                     <i class="fa-solid fa-chevron-down"></i><br>
                     <div class="dropdown-div-user">
                         <a href="#" class="d-block dropdown-links">Wishlist</a>
                         <a href="#" class="d-block dropdown-links">Check Out</a>
                         <a href="#" class="d-block dropdown-links">My Account</a>
-                        <a href="#" class="d-block dropdown-links">Log in</a>
-                        <a href="#" class="d-block dropdown-links">Register</a>
+                        @if (!User.Identity.IsAuthenticated)
+                        {
+                            <form asp-controller="Account" asp-action="Login" method="post" id="logoutForm">
+                                <a href="javascript:void(0);" class="d-block dropdown-links" onclick="document.getElementById('logoutForm').submit();">
+                                    Login
+                                </a>
+                            </form>
+                            <form asp-controller="Account" asp-action="Register" method="post" id="logoutForm">
+                                <a href="javascript:void(0);" class="d-block dropdown-links" onclick="document.getElementById('logoutForm').submit();">
+                                    Register
+                                </a>
+                            </form>
+                        }
+                        else
+                        {
+                            <form asp-controller="Account" asp-action="Logout" method="post" id="logoutForm">
+                                <a href="javascript:void(0);" class="d-block dropdown-links" onclick="document.getElementById('logoutForm').submit();">
+                                    Log out
+                                </a>
+                            </form>
+                        }
                     </div>
                 </button>
                 <button class="navbar-top-right-button gear-button">
@@ -240,9 +266,12 @@
             <button class="navbar-menu-buttons d-flex align-items-center">
                 <span>CONTACT</span>
             </button>
-            <a asp-area="Admin" asp-controller="Dashboard" asp-action="Index" class="navbar-menu-buttons d-flex align-items-center" style="color:black">
-                <span>Admin panel</span>
-            </a>
+            @if (User.IsInRole("Admin") || User.IsInRole("SuperAdmin"))
+            {
+                <a asp-area="Admin" asp-controller="Dashboard" asp-action="Index" class="navbar-menu-buttons d-flex align-items-center" style="color:black">
+                    <span>Admin panel</span>
+                </a>
+            }
         </div>
     </section>
     <section id="navbar-menu-second" class="position-absolute">

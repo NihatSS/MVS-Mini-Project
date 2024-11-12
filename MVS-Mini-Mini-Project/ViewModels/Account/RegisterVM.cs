@@ -5,9 +5,6 @@ namespace MVS_Mini_Mini_Project.ViewModels.Account
     public class RegisterVM
     {
         [Required]
-        public string Fullname { get; set; }
-        [Required]
-
         public string Username { get; set; }
         [Required]
         [DataType(DataType.EmailAddress)]
