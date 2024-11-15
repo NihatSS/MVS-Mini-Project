@@ -51,7 +51,7 @@ namespace MVS_Mini_Mini_Project.Controllers
             return View(basketDetails);
         }
 
-        public async Task<IActionResult> DeleteWorkFromBasket(int id)
+        public async Task<IActionResult> DeleteProductFromBasket(int id)
         {
             List<BasketVM> basket;
 
@@ -75,7 +75,7 @@ namespace MVS_Mini_Mini_Project.Controllers
 
 
 
-        public async Task<IActionResult> DecreaseWorkInBasket(int id)
+        public async Task<IActionResult> DecreaseProductInBasket(int id)
         {
             List<BasketVM> basket;
 
@@ -102,7 +102,7 @@ namespace MVS_Mini_Mini_Project.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        public async Task<IActionResult> IncreaseWorkInBasket(int id)
+        public async Task<IActionResult> IncreaseProductInBasket(int id)
         {
             List<BasketVM> basket;
 

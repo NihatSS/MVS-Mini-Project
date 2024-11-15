@@ -1,8 +1,12 @@
-﻿using Fiorello.Helpers;
+﻿using MailKit.Security;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using MimeKit.Text;
+using MimeKit;
 using MVS_Mini_Mini_Project.Models;
 using MVS_Mini_Mini_Project.ViewModels.Account;
+using MailKit.Net.Smtp;
+using MVS_Mini_Mini_Project.Helpers.Enums;
 
 namespace MVS_Mini_Mini_Project.Controllers
 {
@@ -63,11 +67,15 @@ namespace MVS_Mini_Mini_Project.Controllers
                 return View(request);
             }
 
-            await _userManager.AddToRoleAsync(user, Roles.SuperAdmin.ToString());
-            await _signInManager.SignInAsync(user, isPersistent: false);
+            await _userManager.AddToRoleAsync(user, Roles.Member.ToString());
+            await _signInManager.SignInAsync(user,false);
+
 
             return RedirectToAction("Index", "Home");
         }
+
+
+        
 
 
         [HttpPost]
@@ -112,18 +120,21 @@ namespace MVS_Mini_Mini_Project.Controllers
         }
 
 
-        [HttpGet]
-        public async Task<IActionResult> CreateRole()
-        {
-            foreach (var role in Enum.GetValues(typeof(Roles)))
-            {
-                if (!await _roleMeneger.RoleExistsAsync(nameof(role)))
-                {
-                    await _roleMeneger.CreateAsync(new IdentityRole { Name = role.ToString() });
-                }
-            }
+        //[HttpGet]
+        //public async Task<IActionResult> CreateRole()
+        //{
+        //    foreach (var role in Enum.GetValues(typeof(Roles)))
+        //    {
+        //        if (!await _roleMeneger.RoleExistsAsync(nameof(role)))
+        //        {
+        //            await _roleMeneger.CreateAsync(new IdentityRole { Name = role.ToString() });
+        //        }
+        //    }
 
-            return Ok();
-        }
+        //    return Ok();
+        //}
+
+
+
     }
 }

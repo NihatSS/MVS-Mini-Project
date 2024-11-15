@@ -1,4 +1,4 @@
-﻿@model List<BanType>
+﻿@model ShopVM
 <link rel="stylesheet" href="./assets/css/shop.css">
 
 
@@ -21,7 +21,7 @@
                     <span class="banner-header-text">product ban type</span>
                     <div class="product-type-box">
                         <ul>
-                            @foreach (var item in Model)
+                            @foreach (var item in Model.BanTypes)
                             {
                                 <li class="p-1"><a href="">@item.Name</a></li>
                             }
@@ -183,8 +183,6 @@
                         <div class="p-2">
                             <span style="font-family: 'Raleway'; font-size: 14px;">Sort by</span>
                             <select name="SortBy" id="sort-by-dropdown" class="custom-dropdown">
-                                <option value="featured" class="dropdown-option">Featured</option>
-                                <option value="best-selling" class="dropdown-option">Best Selling</option>
                                 <option value="alphabetically-az" class="dropdown-option">
                                     Alphabetically, A-Z
                                 </option>
@@ -197,717 +195,83 @@
                                 <option value="price-high-to-low" class="dropdown-option">
                                     Price, high to low
                                 </option>
-                                <option value="date-new-to-old" class="dropdown-option">Date, new to old</option>
-                                <option value="date-old-to-new" class="dropdown-option">Date, old to new</option>
                             </select>
 
                         </div>
-                        <div class="p-2 d-flex layout-icons">
-                            <div class="mx-1 layout-icon-div-1 justify-content-center align-items-center d-flex">
-                                <i class="fas fa-th"></i>
-                            </div>
-                            <div class="mx-2 layout-icon-div-2 justify-content-center align-items-center d-flex">
-                                <i class="fas fa-th-list"></i>
-                            </div>
-                        </div>
                     </div>
                     <div class="row mt-2">
-                        <div class="col-xs-6 col-sm-6 col-lg-4">
-                            <div class="big-card">
-                                <h6 class="card-top-title">Quam Vitnibh aliquebo</h6>
-                                <div class="card-img">
-                                    <div class="right-images vis-hidden">
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-up"></i>
-                                            </a>
-                                        </h6>
-                                        <div class="col-12">
-                                            <img src="./assets/img/card5-2.webp" alt="" class="img-fluid">
+                        
+                        @foreach (var item in Model.Products)
+                        {
+                            <div class="col-xs-6 col-sm-6 col-lg-4 mt-4">
+                                <div class="big-card">
+                                    <h6 class="card-top-title">@item.Name</h6>
+                                    <div class="card-img">
+                                        <div class="right-images vis-hidden">
+                                            <h6 class="text-center">
+                                                <a href="">
+                                                    <i class="fa-solid fa-chevron-up"></i>
+                                                </a>
+                                            </h6>
+                                            <div class="col-12">
+                                                <img src="./assets/img/card5-2.webp" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="col-12 mt-1">
+                                                <img src="./assets/img/card2-2.webp" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="col-12 mt-1">
+                                                <img src="./assets/img/card1-2.webp" alt="" class="img-fluid">
+                                            </div>
+                                            <h6 class="text-center">
+                                                <a href="">
+                                                    <i class="fa-solid fa-chevron-down"></i>
+                                                </a>
+                                            </h6>
                                         </div>
-                                        <div class="col-12 mt-1">
-                                            <img src="./assets/img/card2-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 mt-1">
-                                            <img src="./assets/img/card1-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-down"></i>
-                                            </a>
-                                        </h6>
+                                        <span class="card-tag">
+                                            <span class="card-tag-text">new</span>
+                                        </span>
+                                        <img src="./assets/img/card5-2.webp" alt="" class="img-fluid main-image">
                                     </div>
-                                    <span class="card-tag">
-                                        <span class="card-tag-text">new</span>
-                                    </span>
-                                    <img src="./assets/img/card5-2.webp" alt="" class="img-fluid main-image">
-                                </div>
 
-                                <div class="price-box">
-                                    <span class="card-price d-inline">$1550.00</span>
-
-                                </div>
-
-                                <div class="card-bottom p-2">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <button class="card-button">add to cart</button>
-                                        </div>
-                                        <div class="col-8 align-items-center">
-                                            <span class="card-description">
-                                                Lorem ipsum dolor sit amet
-                                                consectetur
-                                                adipisicing elit. A voluptate suscipit error iure, molestias
-                                                reprehenderit deserunt sapiente ...
+                                    <div class="price-box">
+                                        @if (item.Discount.Name == "None")
+                                        {
+                                            <span class="card-price d-inline">$@item.Price</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="card-price d-inline" style="color:red;">
+                                                $@(Convert.ToDecimal(item.Price) * (1 - (item.Discount.DiscountPercent / 100m)))
                                             </span>
-                                            <div class="card-description-icons gap-5 disable">
-                                                <a href=""><i class="fa-solid fa-heart"></i></a>
-                                                <a href=""><i class="fa-solid fa-info"></i></a>
-                                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                                            <span class="card-price d-inline" style="text-decoration:line-through">$@item.Price</span>
+                                        }
+
+                                    </div>
+
+                                    <div class="card-bottom p-2">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <button class="card-button">add to cart</button>
+                                            </div>
+                                            <div class="col-8 align-items-center">
+                                                <span class="card-description">
+                                                    Lorem ipsum dolor sit amet
+                                                    consectetur
+                                                    adipisicing elit. A voluptate suscipit error iure, molestias
+                                                    reprehenderit deserunt sapiente ...
+                                                </span>
+                                                <div class="card-description-icons gap-5 disable">
+                                                    <a href=""><i class="fa-solid fa-heart"></i></a>
+                                                    <a href=""><i class="fa-solid fa-info"></i></a>
+                                                    <a href=""><i class="fa-solid fa-eye"></i></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-lg-4">
-                            <div class="big-card">
-                                <h6 class="card-top-title">Quam Vitnibh aliquebo</h6>
-                                <div class="card-img">
-                                    <div class="right-images vis-hidden">
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-up"></i>
-                                            </a>
-                                        </h6>
-                                        <div class="col-12">
-                                            <img src="./assets/img/card5-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 mt-1">
-                                            <img src="./assets/img/card2-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 mt-1">
-                                            <img src="./assets/img/card1-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-down"></i>
-                                            </a>
-                                        </h6>
-                                    </div>
-                                    <span class="card-tag">
-                                        <span class="card-tag-text">new</span>
-                                    </span>
-                                    <img src="./assets/img/card5-2.webp" alt="" class="img-fluid main-image">
-                                </div>
-
-                                <div class="price-box">
-                                    <span class="card-price d-inline">$1550.00</span>
-
-                                </div>
-
-                                <div class="card-bottom p-2">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <button class="card-button">add to cart</button>
-                                        </div>
-                                        <div class="col-8 align-items-center">
-                                            <span class="card-description">
-                                                Lorem ipsum dolor sit amet
-                                                consectetur
-                                                adipisicing elit. A voluptate suscipit error iure, molestias
-                                                reprehenderit deserunt sapiente ...
-                                            </span>
-                                            <div class="card-description-icons gap-5 disable">
-                                                <a href=""><i class="fa-solid fa-heart"></i></a>
-                                                <a href=""><i class="fa-solid fa-info"></i></a>
-                                                <a href=""><i class="fa-solid fa-eye"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-lg-4">
-                            <div class="big-card">
-                                <h6 class="card-top-title">Quam Vitnibh aliquebo</h6>
-                                <div class="card-img">
-                                    <div class="right-images vis-hidden">
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-up"></i>
-                                            </a>
-                                        </h6>
-                                        <div class="col-12">
-                                            <img src="./assets/img/card5-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 mt-1">
-                                            <img src="./assets/img/card2-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 mt-1">
-                                            <img src="./assets/img/card1-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-down"></i>
-                                            </a>
-                                        </h6>
-                                    </div>
-                                    <span class="card-tag">
-                                        <span class="card-tag-text">new</span>
-                                    </span>
-                                    <img src="./assets/img/card5-2.webp" alt="" class="img-fluid main-image">
-                                </div>
-
-                                <div class="price-box">
-                                    <span class="card-price d-inline">$1550.00</span>
-
-                                </div>
-
-                                <div class="card-bottom p-2">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <button class="card-button">add to cart</button>
-                                        </div>
-                                        <div class="col-8 align-items-center">
-                                            <span class="card-description">
-                                                Lorem ipsum dolor sit amet
-                                                consectetur
-                                                adipisicing elit. A voluptate suscipit error iure, molestias
-                                                reprehenderit deserunt sapiente ...
-                                            </span>
-                                            <div class="card-description-icons gap-5 disable">
-                                                <a href=""><i class="fa-solid fa-heart"></i></a>
-                                                <a href=""><i class="fa-solid fa-info"></i></a>
-                                                <a href=""><i class="fa-solid fa-eye"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-lg-4">
-                            <div class="big-card">
-                                <h6 class="card-top-title">Quam Vitnibh aliquebo</h6>
-                                <div class="card-img">
-                                    <div class="right-images vis-hidden">
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-up"></i>
-                                            </a>
-                                        </h6>
-                                        <div class="col-12">
-                                            <img src="./assets/img/card5-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 mt-1">
-                                            <img src="./assets/img/card2-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 mt-1">
-                                            <img src="./assets/img/card1-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-down"></i>
-                                            </a>
-                                        </h6>
-                                    </div>
-                                    <span class="card-tag">
-                                        <span class="card-tag-text">new</span>
-                                    </span>
-                                    <img src="./assets/img/card5-2.webp" alt="" class="img-fluid main-image">
-                                </div>
-
-                                <div class="price-box">
-                                    <span class="card-price d-inline">$1550.00</span>
-
-                                </div>
-
-                                <div class="card-bottom p-2">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <button class="card-button">add to cart</button>
-                                        </div>
-                                        <div class="col-8 align-items-center">
-                                            <span class="card-description">
-                                                Lorem ipsum dolor sit amet
-                                                consectetur
-                                                adipisicing elit. A voluptate suscipit error iure, molestias
-                                                reprehenderit deserunt sapiente ...
-                                            </span>
-                                            <div class="card-description-icons gap-5 disable">
-                                                <a href=""><i class="fa-solid fa-heart"></i></a>
-                                                <a href=""><i class="fa-solid fa-info"></i></a>
-                                                <a href=""><i class="fa-solid fa-eye"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-lg-4 mt-4">
-                            <div class="big-card">
-                                <h6 class="card-top-title">Quam Vitnibh aliquebo</h6>
-                                <div class="card-img">
-                                    <div class="right-images vis-hidden">
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-up"></i>
-                                            </a>
-                                        </h6>
-                                        <div class="col-12">
-                                            <img src="./assets/img/card5-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 mt-1">
-                                            <img src="./assets/img/card2-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 mt-1">
-                                            <img src="./assets/img/card1-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-down"></i>
-                                            </a>
-                                        </h6>
-                                    </div>
-                                    <span class="card-tag">
-                                        <span class="card-tag-text">new</span>
-                                    </span>
-                                    <img src="./assets/img/card5-2.webp" alt="" class="img-fluid main-image">
-                                </div>
-
-                                <div class="price-box">
-                                    <span class="card-price d-inline">$1550.00</span>
-
-                                </div>
-
-                                <div class="card-bottom p-2">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <button class="card-button">add to cart</button>
-                                        </div>
-                                        <div class="col-8 align-items-center">
-                                            <span class="card-description">
-                                                Lorem ipsum dolor sit amet
-                                                consectetur
-                                                adipisicing elit. A voluptate suscipit error iure, molestias
-                                                reprehenderit deserunt sapiente ...
-                                            </span>
-                                            <div class="card-description-icons gap-5 disable">
-                                                <a href=""><i class="fa-solid fa-heart"></i></a>
-                                                <a href=""><i class="fa-solid fa-info"></i></a>
-                                                <a href=""><i class="fa-solid fa-eye"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-lg-4 mt-4">
-                            <div class="big-card">
-                                <h6 class="card-top-title">Quam Vitnibh aliquebo</h6>
-                                <div class="card-img">
-                                    <div class="right-images vis-hidden">
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-up"></i>
-                                            </a>
-                                        </h6>
-                                        <div class="col-12">
-                                            <img src="./assets/img/card5-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 mt-1">
-                                            <img src="./assets/img/card2-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 mt-1">
-                                            <img src="./assets/img/card1-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-down"></i>
-                                            </a>
-                                        </h6>
-                                    </div>
-                                    <span class="card-tag">
-                                        <span class="card-tag-text">new</span>
-                                    </span>
-                                    <img src="./assets/img/card5-2.webp" alt="" class="img-fluid main-image">
-                                </div>
-
-                                <div class="price-box">
-                                    <span class="card-price d-inline">$1550.00</span>
-
-                                </div>
-
-                                <div class="card-bottom p-2">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <button class="card-button">add to cart</button>
-                                        </div>
-                                        <div class="col-8 align-items-center">
-                                            <span class="card-description">
-                                                Lorem ipsum dolor sit amet
-                                                consectetur
-                                                adipisicing elit. A voluptate suscipit error iure, molestias
-                                                reprehenderit deserunt sapiente ...
-                                            </span>
-                                            <div class="card-description-icons gap-5 disable">
-                                                <a href=""><i class="fa-solid fa-heart"></i></a>
-                                                <a href=""><i class="fa-solid fa-info"></i></a>
-                                                <a href=""><i class="fa-solid fa-eye"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-lg-4 mt-4">
-                            <div class="big-card">
-                                <h6 class="card-top-title">Quam Vitnibh aliquebo</h6>
-                                <div class="card-img">
-                                    <div class="right-images vis-hidden">
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-up"></i>
-                                            </a>
-                                        </h6>
-                                        <div class="col-12">
-                                            <img src="./assets/img/card5-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 mt-1">
-                                            <img src="./assets/img/card2-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 mt-1">
-                                            <img src="./assets/img/card1-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-down"></i>
-                                            </a>
-                                        </h6>
-                                    </div>
-                                    <span class="card-tag">
-                                        <span class="card-tag-text">new</span>
-                                    </span>
-                                    <img src="./assets/img/card5-2.webp" alt="" class="img-fluid main-image">
-                                </div>
-
-                                <div class="price-box">
-                                    <span class="card-price d-inline">$1550.00</span>
-
-                                </div>
-
-                                <div class="card-bottom p-2">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <button class="card-button">add to cart</button>
-                                        </div>
-                                        <div class="col-8 align-items-center">
-                                            <span class="card-description">
-                                                Lorem ipsum dolor sit amet
-                                                consectetur
-                                                adipisicing elit. A voluptate suscipit error iure, molestias
-                                                reprehenderit deserunt sapiente ...
-                                            </span>
-                                            <div class="card-description-icons gap-5 disable">
-                                                <a href=""><i class="fa-solid fa-heart"></i></a>
-                                                <a href=""><i class="fa-solid fa-info"></i></a>
-                                                <a href=""><i class="fa-solid fa-eye"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-lg-4 mt-4">
-                            <div class="big-card">
-                                <h6 class="card-top-title">Quam Vitnibh aliquebo</h6>
-                                <div class="card-img">
-                                    <div class="right-images vis-hidden">
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-up"></i>
-                                            </a>
-                                        </h6>
-                                        <div class="col-12">
-                                            <img src="./assets/img/card5-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 mt-1">
-                                            <img src="./assets/img/card2-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 mt-1">
-                                            <img src="./assets/img/card1-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-down"></i>
-                                            </a>
-                                        </h6>
-                                    </div>
-                                    <span class="card-tag">
-                                        <span class="card-tag-text">new</span>
-                                    </span>
-                                    <img src="./assets/img/card5-2.webp" alt="" class="img-fluid main-image">
-                                </div>
-
-                                <div class="price-box">
-                                    <span class="card-price d-inline">$1550.00</span>
-
-                                </div>
-
-                                <div class="card-bottom p-2">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <button class="card-button">add to cart</button>
-                                        </div>
-                                        <div class="col-8 align-items-center">
-                                            <span class="card-description">
-                                                Lorem ipsum dolor sit amet
-                                                consectetur
-                                                adipisicing elit. A voluptate suscipit error iure, molestias
-                                                reprehenderit deserunt sapiente ...
-                                            </span>
-                                            <div class="card-description-icons gap-5 disable">
-                                                <a href=""><i class="fa-solid fa-heart"></i></a>
-                                                <a href=""><i class="fa-solid fa-info"></i></a>
-                                                <a href=""><i class="fa-solid fa-eye"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-lg-4 mt-4">
-                            <div class="big-card">
-                                <h6 class="card-top-title">Quam Vitnibh aliquebo</h6>
-                                <div class="card-img">
-                                    <div class="right-images vis-hidden">
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-up"></i>
-                                            </a>
-                                        </h6>
-                                        <div class="col-12">
-                                            <img src="./assets/img/card5-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 mt-1">
-                                            <img src="./assets/img/card2-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 mt-1">
-                                            <img src="./assets/img/card1-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-down"></i>
-                                            </a>
-                                        </h6>
-                                    </div>
-                                    <span class="card-tag">
-                                        <span class="card-tag-text">new</span>
-                                    </span>
-                                    <img src="./assets/img/card5-2.webp" alt="" class="img-fluid main-image">
-                                </div>
-
-                                <div class="price-box">
-                                    <span class="card-price d-inline">$1550.00</span>
-
-                                </div>
-
-                                <div class="card-bottom p-2">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <button class="card-button">add to cart</button>
-                                        </div>
-                                        <div class="col-8 align-items-center">
-                                            <span class="card-description">
-                                                Lorem ipsum dolor sit amet
-                                                consectetur
-                                                adipisicing elit. A voluptate suscipit error iure, molestias
-                                                reprehenderit deserunt sapiente ...
-                                            </span>
-                                            <div class="card-description-icons gap-5 disable">
-                                                <a href=""><i class="fa-solid fa-heart"></i></a>
-                                                <a href=""><i class="fa-solid fa-info"></i></a>
-                                                <a href=""><i class="fa-solid fa-eye"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-lg-4 mt-4">
-                            <div class="big-card">
-                                <h6 class="card-top-title">Quam Vitnibh aliquebo</h6>
-                                <div class="card-img">
-                                    <div class="right-images vis-hidden">
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-up"></i>
-                                            </a>
-                                        </h6>
-                                        <div class="col-12">
-                                            <img src="./assets/img/card5-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 mt-1">
-                                            <img src="./assets/img/card2-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 mt-1">
-                                            <img src="./assets/img/card1-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-down"></i>
-                                            </a>
-                                        </h6>
-                                    </div>
-                                    <span class="card-tag">
-                                        <span class="card-tag-text">new</span>
-                                    </span>
-                                    <img src="./assets/img/card5-2.webp" alt="" class="img-fluid main-image">
-                                </div>
-
-                                <div class="price-box">
-                                    <span class="card-price d-inline">$1550.00</span>
-
-                                </div>
-
-                                <div class="card-bottom p-2">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <button class="card-button">add to cart</button>
-                                        </div>
-                                        <div class="col-8 align-items-center">
-                                            <span class="card-description">
-                                                Lorem ipsum dolor sit amet
-                                                consectetur
-                                                adipisicing elit. A voluptate suscipit error iure, molestias
-                                                reprehenderit deserunt sapiente ...
-                                            </span>
-                                            <div class="card-description-icons gap-5 disable">
-                                                <a href=""><i class="fa-solid fa-heart"></i></a>
-                                                <a href=""><i class="fa-solid fa-info"></i></a>
-                                                <a href=""><i class="fa-solid fa-eye"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-lg-4 mt-4">
-                            <div class="big-card">
-                                <h6 class="card-top-title">Quam Vitnibh aliquebo</h6>
-                                <div class="card-img">
-                                    <div class="right-images vis-hidden">
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-up"></i>
-                                            </a>
-                                        </h6>
-                                        <div class="col-12">
-                                            <img src="./assets/img/card5-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 mt-1">
-                                            <img src="./assets/img/card2-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 mt-1">
-                                            <img src="./assets/img/card1-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-down"></i>
-                                            </a>
-                                        </h6>
-                                    </div>
-                                    <span class="card-tag">
-                                        <span class="card-tag-text">new</span>
-                                    </span>
-                                    <img src="./assets/img/card5-2.webp" alt="" class="img-fluid main-image">
-                                </div>
-
-                                <div class="price-box">
-                                    <span class="card-price d-inline">$1550.00</span>
-
-                                </div>
-
-                                <div class="card-bottom p-2">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <button class="card-button">add to cart</button>
-                                        </div>
-                                        <div class="col-8 align-items-center">
-                                            <span class="card-description">
-                                                Lorem ipsum dolor sit amet
-                                                consectetur
-                                                adipisicing elit. A voluptate suscipit error iure, molestias
-                                                reprehenderit deserunt sapiente ...
-                                            </span>
-                                            <div class="card-description-icons gap-5 disable">
-                                                <a href=""><i class="fa-solid fa-heart"></i></a>
-                                                <a href=""><i class="fa-solid fa-info"></i></a>
-                                                <a href=""><i class="fa-solid fa-eye"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-lg-4 mt-4">
-                            <div class="big-card">
-                                <h6 class="card-top-title">Quam Vitnibh aliquebo</h6>
-                                <div class="card-img">
-                                    <div class="right-images vis-hidden">
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-up"></i>
-                                            </a>
-                                        </h6>
-                                        <div class="col-12">
-                                            <img src="./assets/img/card5-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 mt-1">
-                                            <img src="./assets/img/card2-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 mt-1">
-                                            <img src="./assets/img/card1-2.webp" alt="" class="img-fluid">
-                                        </div>
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-down"></i>
-                                            </a>
-                                        </h6>
-                                    </div>
-                                    <span class="card-tag">
-                                        <span class="card-tag-text">new</span>
-                                    </span>
-                                    <img src="./assets/img/card5-2.webp" alt="" class="img-fluid main-image">
-                                </div>
-
-                                <div class="price-box">
-                                    <span class="card-price d-inline">$1550.00</span>
-
-                                </div>
-
-                                <div class="card-bottom p-2">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <button class="card-button">add to cart</button>
-                                        </div>
-                                        <div class="col-8 align-items-center">
-                                            <span class="card-description">
-                                                Lorem ipsum dolor sit amet
-                                                consectetur
-                                                adipisicing elit. A voluptate suscipit error iure, molestias
-                                                reprehenderit deserunt sapiente ...
-                                            </span>
-                                            <div class="card-description-icons gap-5 disable">
-                                                <a href=""><i class="fa-solid fa-heart"></i></a>
-                                                <a href=""><i class="fa-solid fa-info"></i></a>
-                                                <a href=""><i class="fa-solid fa-eye"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        }
                     </div>
                     <div class="row bg-white mt-2">
                         <div class="col-12 mb-2 justify-content-center align-items-center d-flex">

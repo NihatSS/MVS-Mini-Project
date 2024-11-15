@@ -1,9 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MVS_Mini_Mini_Project.Data;
 
 namespace MVS_Mini_Mini_Project.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "SuperAdmin,Admin")]
+
     public class DashboardController : Controller
     {
         private readonly AppDbContext _context;

@@ -251,3 +251,7 @@ C:\Users\user\OneDrive\Desktop\pb102_tasks\Mini Projects\MVS-Mini-Mini-Project\M
 C:\Users\user\OneDrive\Desktop\pb102_tasks\Mini Projects\MVS-Mini-Mini-Project\MVS-Mini-Mini-Project\obj\Debug\net6.0\MVS-Mini-Mini-Project.pdb
 C:\Users\user\OneDrive\Desktop\pb102_tasks\Mini Projects\MVS-Mini-Mini-Project\MVS-Mini-Mini-Project\obj\Debug\net6.0\MVS-Mini-Mini-Project.genruntimeconfig.cache
 C:\Users\user\OneDrive\Desktop\pb102_tasks\Mini Projects\MVS-Mini-Mini-Project\MVS-Mini-Mini-Project\obj\Debug\net6.0\ref\MVS-Mini-Mini-Project.dll
+C:\Users\user\OneDrive\Desktop\pb102_tasks\Mini Projects\MVS-Mini-Mini-Project\MVS-Mini-Mini-Project\bin\Debug\net6.0\MailKit.dll
+C:\Users\user\OneDrive\Desktop\pb102_tasks\Mini Projects\MVS-Mini-Mini-Project\MVS-Mini-Mini-Project\bin\Debug\net6.0\MimeKit.dll
+C:\Users\user\OneDrive\Desktop\pb102_tasks\Mini Projects\MVS-Mini-Mini-Project\MVS-Mini-Mini-Project\bin\Debug\net6.0\NETCore.MailKit.dll
+C:\Users\user\OneDrive\Desktop\pb102_tasks\Mini Projects\MVS-Mini-Mini-Project\MVS-Mini-Mini-Project\bin\Debug\net6.0\BouncyCastle.Crypto.dll

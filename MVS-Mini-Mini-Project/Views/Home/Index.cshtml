@@ -60,55 +60,61 @@
                         </div>
                         <div class="col-12 d-flex justify-content-between">
                             <div class="owl-carousel-1 owl-carousel owl-theme">
-                                @foreach (var item in Model.Products.Take(3))
+                                @if (Model.Products.Count() != 0)
                                 {
-                                    <div class="">
-                                        <div class="big-card">
-                                            <h6 class="card-top-title">@item.Name</h6>
-                                            <div class="card-img">
-                                                <span class="card-tag">
-                                                    <span class="card-tag-text">new</span>
-                                                </span>
-                                                <img src="./assets/img/@item.Images.FirstOrDefault(x=>x.IsMain).Image" alt="" class="img-fluid">
-                                            </div>
-                                            <div class="price-box">
-                                                @if (item.Discount.Name == "None")
-                                                {
-                                                    <span class="card-price d-inline">$@item.Price</span>
-                                                }
-                                                else
-                                                {
-                                                    <span class ="card-price d-inline" style="color:red;">
-                                                        $@(Convert.ToDecimal(item.Price) * (1 - (item.Discount.DiscountPercent / 100m)))
+                                    @foreach (var item in Model.Products.Take(3))
+                                    {
+                                        <div class="">
+                                            <div class="big-card">
+                                                <h6 class="card-top-title">@item.Name</h6>
+                                                <div class="card-img">
+                                                    <span class="card-tag">
+                                                        <span class="card-tag-text">new</span>
                                                     </span>
-                                                    <span class="card-price d-inline" style="text-decoration:line-through">$@item.Price</span>
-                                                }
-                                            </div>
-                                            <div class="card-bottom p-2">
-                                                <div class="row">
-                                                    <div class="col-4">
-														<button data-id="@item.Id" class="card-button"> add to cart</button>
-                                                    </div>
-                                                    <div class="col-8 align-items-center">
-                                                        <span class="card-description">
-                                                            @item.SortDesc
+                                                    <img src="./assets/img/@item.Images.FirstOrDefault(x=>x.IsMain).Image" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="price-box">
+                                                    @if (item.Discount.Name == "None")
+                                                    {
+                                                        <span class="card-price d-inline">$@item.Price</span>
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="card-price d-inline" style="color:red;">
+                                                            $@(Convert.ToDecimal(item.Price) * (1 - (item.Discount.DiscountPercent / 100m)))
                                                         </span>
-                                                        <div class="card-description-icons gap-5 disable">
-                                                            <a href=""><i class="fa-solid fa-heart"></i></a>
-                                                            <a href=""><i class="fa-solid fa-info"></i></a>
-                                                            <a href=""><i class="fa-solid fa-eye"></i></a>
+                                                        <span class="card-price d-inline" style="text-decoration:line-through">$@item.Price</span>
+                                                    }
+                                                </div>
+                                                <div class="card-bottom p-2">
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <button data-id="@item.Id" class="card-button"> add to cart</button>
+                                                        </div>
+                                                        <div class="col-8 align-items-center">
+                                                            <span class="card-description">
+                                                                @item.SortDesc
+                                                            </span>
+                                                            <div class="card-description-icons gap-5 disable">
+                                                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                                                                <a href=""><i class="fa-solid fa-info"></i></a>
+                                                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    }
                                 }
+                                
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-lg-6">
+                                @if (Model.Products.Count() != 0)
+                                {
                     <div class="row">
                         <div class="col-12 d-flex justify-content-between">
                             <span class="banner-header-text">last deal</span>
@@ -119,73 +125,85 @@
                         </div>
                         <div class="col-12 d-flex justify-content-between">
                             <div class="owl-carousel owl-carousel-2">
-                                @for (int i = 0; i < 4; i++)
-                               {
-                                    <div class="">
-                                        <div class="big-card">
-                                            <h6 class="card-top-title">Quam Vitnibh aliquebo</h6>
-                                            <div class="card-img">
-                                                <div class="right-images vis-hidden">
-                                                    @if (Model.Products[i].Images.Where(x => x.IsMain == false).Count() != 0)
-                                                    {
-                                                        <h6 class="text-center">
-                                                            <a href="">
-                                                                <i class="fa-solid fa-chevron-up"></i>
-                                                            </a>
-                                                        </h6>
-                                                        @foreach (var item in Model.Products[i].Images.Where(x => x.IsMain == false))
+                                    @for (int i = 0; i < Model.Products.Count(); i++)
+                                    {
+                                        <div class="">
+                                            <div class="big-card">
+                                                <h6 class="card-top-title">@Model.Products[i].Name</h6>
+                                                <div class="card-img">
+                                                    <div class="right-images vis-hidden">
+
+                                                        @if (Model.Products[i].Images.Where(x => x.IsMain == false).Count() != 0)
                                                         {
-                                                            <div class="col-12">
-                                                                <img src="./assets/img/@item.Image" alt="" class="img-fluid">
-                                                            </div>
+                                                            <h6 class="text-center">
+                                                                <a href="">
+                                                                    <i class="fa-solid fa-chevron-up"></i>
+                                                                </a>
+                                                            </h6>
+                                                            @foreach (var item in Model.Products[i].Images.Where(x => x.IsMain == false))
+                                                            {
+                                                                <div class="col-12">
+                                                                    <img src="./assets/img/@item.Image" alt="" class="img-fluid">
+                                                                </div>
+                                                            }
+                                                            <h6 class="text-center">
+                                                                <a href="">
+                                                                    <i class="fa-solid fa-chevron-down"></i>
+                                                                </a>
+                                                            </h6>
                                                         }
-                                                        <h6 class="text-center">
-                                                            <a href="">
-                                                                <i class="fa-solid fa-chevron-down"></i>
-                                                            </a>
-                                                        </h6>
+
+                                                    </div>
+                                                    <img src="./assets/img/@Model.Products[i].Images.FirstOrDefault(x => x.IsMain).Image" alt=""
+                                                         class="img-fluid main-image">
+                                                </div>
+                                                <div class="price w-100">
+                                                    @if (Model.Products[i].Discount.Name != "null")
+                                                    {
+                                                        <div class="sale-box">
+                                                            <span class="text-center">sale</span>
+                                                        </div>
                                                     }
-                                                </div>
-                                                <img src="./assets/img/@Model.Products[i].Images.FirstOrDefault(x => x.IsMain).Image" alt=""
-                                                     class="img-fluid main-image">
-                                            </div>
-                                            <div class="price w-100">
-                                                @if (Model.Products[i].Discount.Name != "null")
-                                                {
-                                                    <div class="sale-box">
-                                                        <span class="text-center">sale</span>
+                                                    <div class="price-box">
+                                                        @if (Model.Products[i].Discount.Name == "None")
+                                                        {
+                                                            <span class="card-price d-inline">$@Model.Products[i].Price</span>
+                                                        }
+                                                        else
+                                                        {
+                                                            <span class="card-price d-inline" style="color:red;">
+                                                                $@(Convert.ToDecimal(Model.Products[i].Price) * (1 - (Model.Products[i].Discount.DiscountPercent / 100m)))
+                                                            </span>
+                                                            <span class="card-price d-inline" style="text-decoration:line-through">$@Model.Products[i].Price</span>
+                                                        }
+
                                                     </div>
-                                                }
-                                                <div class="price-box">
-                                                    <span class="card-sale-price d-inline">$1550.00</span>
-                                                    <span class="card-discount-price">$2350.00</span>
 
                                                 </div>
-
-                                            </div>
-                                            <div class="card-bottom p-2">
-                                                <div class="row">
-                                                    <div class="col-4">
-                                                        <button data-id="@Model.Products[i].Id" class="card-button"> add to cart</button>
-                                                    </div>
-                                                    <div class="col-8 align-items-center">
-                                                        <span class="card-description">
-                                                            @Model.Products[i].SortDesc
-                                                        </span>
-                                                        <div class="card-description-icons gap-5 disable">
-                                                            <a href=""><i class="fa-solid fa-heart"></i></a>
-                                                            <a href=""><i class="fa-solid fa-info"></i></a>
-                                                            <a href=""><i class="fa-solid fa-eye"></i></a>
+                                                <div class="card-bottom p-2">
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <button data-id="@Model.Products[i].Id" class="card-button"> add to cart</button>
+                                                        </div>
+                                                        <div class="col-8 align-items-center">
+                                                            <span class="card-description">
+                                                                @Model.Products[i].SortDesc
+                                                            </span>
+                                                            <div class="card-description-icons gap-5 disable">
+                                                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                                                                <a href=""><i class="fa-solid fa-info"></i></a>
+                                                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                               }
+                                    }
                             </div>
                         </div>
                     </div>
+                                }
                 </div>
 
             </div>
@@ -195,6 +213,8 @@
     </section>
     <section id="new-products">
         <div class="container">
+                @if (Model.Products.Count() != 0)
+                {
             <div class="row">
                 <div class="col-12 justify-content-between d-flex">
                     <span class="banner-header-text">new products</span>
@@ -203,76 +223,77 @@
                         <button class="carousel-button"><i class="fa-solid fa-chevron-right"></i></button>
                     </div>
                 </div>
-                @for (int i = 0; i < Model.Products.Count(); i++)
-                {
-                    <div class="col-xs-6 col-sm-6 col-lg-3 @(i >= 4 ? "mt-4" : "")">
-                        <div class="big-card">
-                            <h6 class="card-top-title">@Model.Products[i].Name</h6>
-                            <div class="card-img">
-                                <div class="right-images vis-hidden">
-                                    
-                                    @if (Model.Products[i].Images.Where(x => x.IsMain == false).Count() != 0)
-                                    {
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-up"></i>
-                                            </a>
-                                        </h6>
-                                        @foreach (var item in Model.Products[i].Images.Where(x => x.IsMain == false))
+                    @for (int i = 0; i < Model.Products.Count(); i++)
+                    {
+                        <div class="col-xs-6 col-sm-6 col-lg-3 @(i >= 4 ? "mt-4" : "")">
+                            <div class="big-card">
+                                <h6 class="card-top-title">@Model.Products[i].Name</h6>
+                                <div class="card-img">
+                                    <div class="right-images vis-hidden">
+
+                                        @if (Model.Products[i].Images.Where(x => x.IsMain == false).Count() != 0)
                                         {
-                                            <div class="col-12">
-                                                <img src="./assets/img/@item.Image" alt="" class="img-fluid">
-                                            </div>
+                                            <h6 class="text-center">
+                                                <a href="">
+                                                    <i class="fa-solid fa-chevron-up"></i>
+                                                </a>
+                                            </h6>
+                                            @foreach (var item in Model.Products[i].Images.Where(x => x.IsMain == false))
+                                            {
+                                                <div class="col-12">
+                                                    <img src="./assets/img/@item.Image" alt="" class="img-fluid">
+                                                </div>
+                                            }
+                                            <h6 class="text-center">
+                                                <a href="">
+                                                    <i class="fa-solid fa-chevron-down"></i>
+                                                </a>
+                                            </h6>
                                         }
-                                        <h6 class="text-center">
-                                            <a href="">
-                                                <i class="fa-solid fa-chevron-down"></i>
-                                            </a>
-                                        </h6>
-                                    }
-                                    
-                                </div>
-                                <img src="./assets/img/@Model.Products[i].Images.FirstOrDefault(x=>x.IsMain).Image" alt="" class="img-fluid main-image">
-                            </div>
 
-                            <div class="price-box">
-                                @if (Model.Products[i].Discount.Name == "None")
-                                {
-                                    <span class="card-price d-inline">$@Model.Products[i].Price</span>
-                                }
-                                else
-                                {
-                                    <span class="card-price d-inline" style="color:red;">
-                                        $@(Convert.ToDecimal(Model.Products[i].Price) * (1 - (Model.Products[i].Discount.DiscountPercent / 100m)))
-                                    </span>
-                                    <span class="card-price d-inline" style="text-decoration:line-through">$@Model.Products[i].Price</span>
-                                }
-
-                            </div>
-
-                            <div class="card-bottom p-2">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <button data-id="@Model.Products[i].Id" class="card-button"> add to cart</button>
                                     </div>
-                                    <div class="col-8 align-items-center">
-                                        <span class="card-description">
-                                            @Model.Products[i].SortDesc
+                                    <img src="./assets/img/@Model.Products[i].Images.FirstOrDefault(x=>x.IsMain).Image" alt="" class="img-fluid main-image">
+                                </div>
+
+                                <div class="price-box">
+                                    @if (Model.Products[i].Discount.Name == "None")
+                                    {
+                                        <span class="card-price d-inline">$@Model.Products[i].Price</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="card-price d-inline" style="color:red;">
+                                            $@(Convert.ToDecimal(Model.Products[i].Price) * (1 - (Model.Products[i].Discount.DiscountPercent / 100m)))
                                         </span>
-                                        <div class="card-description-icons gap-5 disable">
-                                            <a href=""><i class="fa-solid fa-heart"></i></a>
-                                            <a href=""><i class="fa-solid fa-info"></i></a>
-                                            <a href=""><i class="fa-solid fa-eye"></i></a>
+                                        <span class="card-price d-inline" style="text-decoration:line-through">$@Model.Products[i].Price</span>
+                                    }
+
+                                </div>
+
+                                <div class="card-bottom p-2">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <button data-id="@Model.Products[i].Id" class="card-button"> add to cart</button>
+                                        </div>
+                                        <div class="col-8 align-items-center">
+                                            <span class="card-description">
+                                                @Model.Products[i].SortDesc
+                                            </span>
+                                            <div class="card-description-icons gap-5 disable">
+                                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                                                <a href=""><i class="fa-solid fa-info"></i></a>
+                                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                }
+                    }
 
             </div>
+                }
         </div>
 
         </div>

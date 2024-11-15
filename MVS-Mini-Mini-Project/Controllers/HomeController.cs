@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MVS_Mini_Mini_Project.Data;
+using MVS_Mini_Mini_Project.Models;
 using MVS_Mini_Mini_Project.ViewModels;
 using Newtonsoft.Json;
 

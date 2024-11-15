@@ -7,6 +7,8 @@ using MVS_Mini_Mini_Project.Models;
 namespace MVS_Mini_Mini_Project.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "SuperAdmin,Admin")]
+
     public class SliderController : Controller
     {
         private readonly AppDbContext _context;

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MVS_Mini_Mini_Project.Data;
 using MVS_Mini_Mini_Project.Models;
@@ -7,6 +8,8 @@ using MVS_Mini_Mini_Project.ViewModels;
 namespace MVS_Mini_Mini_Project.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "SuperAdmin,Admin")]
+
     public class BrandController : Controller
     {
         private readonly AppDbContext _context;

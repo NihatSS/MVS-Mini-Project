@@ -1,7 +1,6 @@
 ﻿@model List<BasketViewVM>
 
 <link href="~/assets/css/custom.css" rel="stylesheet" />
-<link href="~/assets/css/bootstrap.css" rel="stylesheet" />
 
 <section class="gradient-custom">
     <div class="container" style="padding:50px 0">
@@ -30,7 +29,7 @@
                                 <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
                                     <!-- Data -->
                                     <p><strong>@item.Name</strong></p>
-                                    <form asp-action="DeleteWorkFromBasket" asp-route-id="@item.Id" method="post">
+                                    <form asp-action="DeleteProductFromBasket" asp-route-id="@item.Id" method="post">
                                         <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-danger btn-sm me-1 mb-2" data-mdb-tooltip-init
                                                 title="Remove item">
                                             <i class="fas fa-trash"></i>
@@ -42,7 +41,7 @@
                                 <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                                     <!-- Quantity -->
                                     <div class="d-flex mb-4" style="max-width: 300px">
-                                        <form asp-action="DecreaseWorkInBasket" asp-route-id="@item.Id" method="post">
+                                        <form asp-action="DecreaseProductInBasket" asp-route-id="@item.Id" method="post">
                                             <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary px-3 me-2">
                                                 <i class="fas fa-minus"></i>
                                             </button>
@@ -53,7 +52,7 @@
                                             <label class="form-label" for="form1">Quantity</label>
                                         </div>
 
-                                        <form asp-action="IncreaseWorkInBasket" asp-route-id="@item.Id" method="post">
+                                        <form asp-action="IncreaseProductInBasket" asp-route-id="@item.Id" method="post">
                                             <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary px-3 ms-2">
                                                 <i class="fas fa-plus"></i>
                                             </button>
